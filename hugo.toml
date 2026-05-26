@@ -15,10 +15,19 @@ removePathAccents = true
   logo = "/images/logo.svg"
   founding_year = "2026"
   expertise = ["Logiciels SIRH", "Gestion des temps", "Paie et administration RH", "Gestion des talents", "Formation et compétences"]
+  author_name = "Mathilde Lefranc"
+  author_url = "https://meilleur-logiciel-sirh.com/authors/mathilde-lefranc/"
+  author_job_title = "Consultante SIRH & transformation RH"
+  og_locale_alternate = "en_US"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+  taxonomy = ["html", "rss"]
 
 [languages]
   [languages.fr]

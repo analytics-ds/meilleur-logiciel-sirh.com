@@ -1,33 +1,70 @@
 # Meilleur Logiciel SIRH
 
-> Comparatif independant des logiciels SIRH du marche francais : paie, gestion des temps, talents, formation. Guides, retours d'experience et tendances RH pour les DRH, RRH et dirigeants.
+> Comparatif indépendant des logiciels SIRH du marché français : paie, gestion des temps, talents, formation. Guides, retours d'expérience et tendances RH pour les DRH, RRH et dirigeants.
 
-## A propos
+## À propos
 
-Meilleur Logiciel SIRH est un media independant edite par l'agence SEO datashake. Il publie des comparatifs, guides d'achat et analyses sur l'ecosysteme des logiciels SIRH (Systeme d'Information Ressources Humaines) en France. Le site couvre la paie, la gestion des temps et des activites, la gestion des talents, la formation et les usages sectoriels (retail, hotellerie, sante, industrie).
+Meilleur Logiciel SIRH est un média indépendant édité par l'agence SEO datashake. Il publie des comparatifs, guides d'achat et analyses sur l'écosystème des logiciels SIRH (Système d'Information Ressources Humaines) en France. Le site couvre la paie, la gestion des temps et des activités, la gestion des talents, la formation et les usages sectoriels (retail, hôtellerie, santé, industrie). Tous les contenus sont rédigés ou supervisés par Mathilde Lefranc, consultante SIRH avec plus de 12 ans d'expérience en transformation digitale RH.
 
-## Contenu principal
+## Méthodologie
 
-- Gestion des temps et plannings (GTA, pointage, planification)
-- Paie et administration RH (DSN, bulletin, conformite)
-- Gestion des talents et entretiens (performance, GEPP)
-- Formation et competences (LMS, e-learning)
-- SIRH par secteur (retail, hotellerie, sante, industrie)
-- Guides et tendances RH (analyses du marche, prospective)
+Les comparatifs et analyses publiés sur Meilleur Logiciel SIRH sont basés sur :
+- L'étude des fonctionnalités, prix et conditions contractuelles publiés par les éditeurs
+- Les retours d'expérience de DRH, RRH et consultants ayant déployé les solutions
+- L'analyse de la conformité réglementaire (DSN, RGPD, AI Act, directives sociales)
+- L'évaluation sectorielle (retail, hôtellerie et restauration, santé, industrie)
 
-## Articles recents
+Le site ne vend ni logiciel ni service. Aucun éditeur SIRH ne rémunère pour figurer dans nos contenus.
 
-- Logiciel de gestion des temps : guide pour bien choisir — /blog/logiciel-gestion-des-temps-guide-2026/
-- Logiciel de paie : 5 criteres pour bien choisir — /blog/logiciel-paie-5-criteres-choisir/
-- Logiciel d'entretien annuel : pourquoi digitaliser — /blog/logiciel-entretien-annuel-pourquoi-digitaliser/
-- Plateforme LMS : comment choisir sa solution de formation — /blog/plateforme-lms-choisir-solution-formation/
-- SIRH par secteur : pourquoi le choix depend de votre metier — /blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier/
-- Tendances RH 2026 : ce qui change dans les logiciels SIRH — /blog/tendances-rh-2026-ce-qui-change-logiciels-sirh/
+## Catégories principales
+
+- **Gestion des temps et plannings** : GTA, pointage, planification multi-équipes, conformité conventions collectives
+- **Paie et administration RH** : DSN, bulletins, intégrations, accompagnement, sécurité des données
+- **Gestion des talents et entretiens** : performance, GEPP, mobilité interne, entretiens annuels et professionnels
+- **Formation et compétences** : LMS, e-learning, blended learning, certifications obligatoires
+- **SIRH par secteur** : retail, hôtellerie et restauration, santé, industrie
+- **Guides et tendances RH** : IA dans les RH, expérience collaborateur, conformité, analyses de marché
+
+## Articles de référence (FR)
+
+- Logiciel de gestion des temps : guide pour bien choisir : https://meilleur-logiciel-sirh.com/blog/logiciel-gestion-des-temps-guide-2026/
+- Logiciel de paie : 5 critères pour bien choisir : https://meilleur-logiciel-sirh.com/blog/logiciel-paie-5-criteres-choisir/
+- Logiciel d'entretien annuel : pourquoi digitaliser : https://meilleur-logiciel-sirh.com/blog/logiciel-entretien-annuel-pourquoi-digitaliser/
+- Plateforme LMS : comment choisir sa solution de formation : https://meilleur-logiciel-sirh.com/blog/plateforme-lms-choisir-solution-formation/
+- SIRH par secteur : pourquoi le choix dépend de votre métier : https://meilleur-logiciel-sirh.com/blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier/
+- Tendances RH 2026 : ce qui change dans les logiciels SIRH : https://meilleur-logiciel-sirh.com/blog/tendances-rh-2026-ce-qui-change-logiciels-sirh/
+
+## Articles de référence (EN)
+
+- Time tracking software: how to choose the right one : https://meilleur-logiciel-sirh.com/en/blog/time-tracking-software-guide-2026/
+- Payroll software: 5 criteria to choose the right one : https://meilleur-logiciel-sirh.com/en/blog/payroll-software-5-criteria/
+- Performance review software: why go digital : https://meilleur-logiciel-sirh.com/en/blog/performance-review-software-why-go-digital/
+- LMS platform: how to choose your training solution : https://meilleur-logiciel-sirh.com/en/blog/lms-platform-how-to-choose/
+- HRIS by industry: why the choice depends on your business : https://meilleur-logiciel-sirh.com/en/blog/hris-by-industry-why-the-choice-depends-on-your-business/
+- HR trends 2026: what changes in HRIS software : https://meilleur-logiciel-sirh.com/en/blog/hr-trends-2026-what-changes-in-hris-software/
+
+## Pages clés
+
+- Homepage FR : https://meilleur-logiciel-sirh.com/
+- Homepage EN : https://meilleur-logiciel-sirh.com/en/
+- Blog FR : https://meilleur-logiciel-sirh.com/blog/
+- Blog EN : https://meilleur-logiciel-sirh.com/en/blog/
+- Plan du site : https://meilleur-logiciel-sirh.com/plan-du-site/
+- Page auteur Mathilde Lefranc : https://meilleur-logiciel-sirh.com/authors/mathilde-lefranc/
 
 ## Informations techniques
 
-- Generateur : Hugo
-- Hebergement : GitHub Pages
-- Sitemap : https://meilleur-logiciel-sirh.com/sitemap.xml
-- RSS : https://meilleur-logiciel-sirh.com/index.xml
-- Langues : francais (par defaut), anglais sous /en/
+- Générateur : Hugo (site statique)
+- Hébergement : GitHub Pages (org analytics-ds)
+- Langues : français (par défaut) + anglais (sous /en/)
+- Sitemap XML : https://meilleur-logiciel-sirh.com/sitemap.xml
+- Sitemap FR : https://meilleur-logiciel-sirh.com/fr/sitemap.xml
+- Sitemap EN : https://meilleur-logiciel-sirh.com/en/sitemap.xml
+- RSS FR : https://meilleur-logiciel-sirh.com/index.xml
+- RSS EN : https://meilleur-logiciel-sirh.com/en/index.xml
+- Schema.org : Organization, WebSite, BlogPosting, Person, BreadcrumbList, FAQPage
+
+## Contact
+
+- URL : https://meilleur-logiciel-sirh.com/
+- Éditeur : agence SEO datashake
