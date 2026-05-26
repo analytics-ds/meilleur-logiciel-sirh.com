@@ -8,6 +8,7 @@ defaultContentLanguageInSubdir = false
 enableRobotsTXT = false
 enableEmoji = false
 removePathAccents = true
+titleCaseStyle = "none"
 
 [params]
   description = "Comparatif indépendant des logiciels SIRH du marché : paie, GTA, talents, formation. Guides, retours d'expérience et tendances RH."
