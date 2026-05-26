@@ -1,0 +1,288 @@
+{{ $isEN := eq .Site.Language.Lang "en" }}
+{{ $base := cond $isEN "/en/" "/" }}
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ "/" | relURL }}" class="site-logo" aria-label="{{ .Site.Title }}">
+            <img src="{{ "/images/logo.svg" | relURL }}" alt="" width="28" height="28" class="site-logo-mark">
+            <span class="site-logo-text">{{ .Site.Title }}</span>
+        </a>
+
+        <nav class="site-nav" role="navigation" aria-label="{{ if $isEN }}Main navigation{{ else }}Navigation principale{{ end }}">
+            <!-- Mega menu 1 : Modules SIRH -->
+            <div class="nav-item has-mega">
+                <button class="nav-link mega-trigger" aria-haspopup="true" aria-expanded="false">
+                    {{ if $isEN }}HRIS modules{{ else }}Modules SIRH{{ end }}
+                    <span class="chev" aria-hidden="true">▾</span>
+                </button>
+                <div class="mega-menu" role="menu">
+                    <div class="mega-inner">
+                        <div class="mega-col mega-col-main">
+                            <span class="mega-label">{{ if $isEN }}By function{{ else }}Par fonction{{ end }}</span>
+                            <div class="mega-grid">
+                                <a href="{{ $base }}categories/{{ cond $isEN "time-and-schedule-management" "gestion-des-temps-et-plannings" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-blue">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Time tracking{{ else }}Gestion des temps{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Scheduling, clock-in, WFM{{ else }}Planning, pointage, GTA{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "payroll-and-hr-administration" "paie-et-administration-rh" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-amber">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="7" y1="15" x2="11" y2="15"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Payroll & admin{{ else }}Paie & administration{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}DSN, payslips, compliance{{ else }}DSN, bulletins, conformité{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "talent-management-and-reviews" "gestion-des-talents-et-entretiens" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-violet">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Talents & reviews{{ else }}Talents & entretiens{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Performance, GEPP, mobility{{ else }}Performance, GEPP, mobilité{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "training-and-skills" "formation-et-competences" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-mint">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Training & skills{{ else }}Formation & compétences{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}LMS, e-learning, certifications{{ else }}LMS, e-learning, certifications{{ end }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col mega-col-feat">
+                            <span class="mega-label">{{ if $isEN }}Editor's pick{{ else }}Sélection éditoriale{{ end }}</span>
+                            <a href="{{ $base }}blog/{{ cond $isEN "payroll-software-5-criteria" "logiciel-paie-5-criteres-choisir" }}/" class="mega-feat">
+                                <div class="mega-feat-img">
+                                    <img src="{{ "/images/blog/logiciel-paie-5-criteres-choisir.svg" | relURL }}" alt="" loading="lazy">
+                                </div>
+                                <span class="mega-feat-tag">{{ if $isEN }}Guide{{ else }}Guide{{ end }}</span>
+                                <h4>{{ if $isEN }}Payroll software: 5 criteria to choose{{ else }}Logiciel de paie : les 5 critères pour bien choisir{{ end }}</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mega menu 2 : Par secteur -->
+            <div class="nav-item has-mega">
+                <button class="nav-link mega-trigger" aria-haspopup="true" aria-expanded="false">
+                    {{ if $isEN }}By industry{{ else }}Par secteur{{ end }}
+                    <span class="chev" aria-hidden="true">▾</span>
+                </button>
+                <div class="mega-menu" role="menu">
+                    <div class="mega-inner">
+                        <div class="mega-col mega-col-main">
+                            <span class="mega-label">{{ if $isEN }}Industries{{ else }}Secteurs d'activité{{ end }}</span>
+                            <div class="mega-grid">
+                                <a href="{{ $base }}categories/{{ cond $isEN "hris-retail" "sirh-retail" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-rose">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9h16v11H4z"/><path d="M9 13h6"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">Retail</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Multi-store, peak hours{{ else }}Multi-magasins, flux variables{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "hris-hospitality-and-restaurants" "sirh-hotellerie-et-restauration" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-amber">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v9H4z"/><path d="M6 11V7a3 3 0 0 1 6 0v4"/><path d="M12 11V7a3 3 0 0 1 6 0v4"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Hospitality{{ else }}Hôtellerie & restauration{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Split shifts, seasonality{{ else }}Coupures, saisonnalité{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "hris-healthcare" "sirh-sante" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-blue">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M4 12h16"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Healthcare{{ else }}Santé{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}24/7, on-call, equivalences{{ else }}24/7, gardes, équivalences{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "hris-manufacturing" "sirh-industrie" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-slate">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V9l5 3V9l5 3V9l4 3v8"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Manufacturing{{ else }}Industrie{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}3x8, 5x8, regulated breaks{{ else }}3x8, 5x8, pauses réglementées{{ end }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col mega-col-feat">
+                            <span class="mega-label">{{ if $isEN }}Featured article{{ else }}Article en avant{{ end }}</span>
+                            <a href="{{ $base }}blog/{{ cond $isEN "hris-by-industry-why-the-choice-depends-on-your-business" "sirh-par-secteur-pourquoi-le-choix-depend-du-metier" }}/" class="mega-feat">
+                                <div class="mega-feat-img">
+                                    <img src="{{ "/images/blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier.svg" | relURL }}" alt="" loading="lazy">
+                                </div>
+                                <span class="mega-feat-tag">{{ if $isEN }}Analysis{{ else }}Analyse{{ end }}</span>
+                                <h4>{{ if $isEN }}Why HRIS choice depends on your industry{{ else }}Pourquoi le choix du SIRH dépend de votre métier{{ end }}</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mega menu 3 : Ressources -->
+            <div class="nav-item has-mega">
+                <button class="nav-link mega-trigger" aria-haspopup="true" aria-expanded="false">
+                    {{ if $isEN }}Resources{{ else }}Ressources{{ end }}
+                    <span class="chev" aria-hidden="true">▾</span>
+                </button>
+                <div class="mega-menu mega-narrow" role="menu">
+                    <div class="mega-inner">
+                        <div class="mega-col mega-col-main">
+                            <span class="mega-label">{{ if $isEN }}Explore{{ else }}Explorer{{ end }}</span>
+                            <div class="mega-grid mega-grid-1">
+                                <a href="{{ $base }}blog/" class="mega-item">
+                                    <span class="mega-ico mega-ico-blue">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 8h16"/><path d="M8 4v16"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}All articles{{ else }}Tous les articles{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Comparisons, guides, analyses{{ else }}Comparatifs, guides, analyses{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}categories/{{ cond $isEN "hr-guides-and-trends" "guides-et-tendances-rh" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-amber">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l4-4 5 5 8-8"/><path d="M15 6h5v5"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}HR trends{{ else }}Tendances RH{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Market analyses, foresight{{ else }}Analyses marché, prospective{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}#categories" class="mega-item">
+                                    <span class="mega-ico mega-ico-mint">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Categories{{ else }}Catégories{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}Browse by topic{{ else }}Parcourir par thème{{ end }}</div>
+                                    </div>
+                                </a>
+                                <a href="{{ $base }}{{ cond $isEN "site-map" "plan-du-site" }}/" class="mega-item">
+                                    <span class="mega-ico mega-ico-slate">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+                                    </span>
+                                    <div>
+                                        <div class="mega-item-title">{{ if $isEN }}Sitemap{{ else }}Plan du site{{ end }}</div>
+                                        <div class="mega-item-desc">{{ if $isEN }}All pages{{ else }}Toutes les pages{{ end }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Language switcher -->
+        {{ if gt (len hugo.Sites) 1 }}
+        <div class="lang-switcher" aria-label="Language switcher">
+            {{ $currentLang := .Site.Language.Lang }}
+            {{ range hugo.Sites }}
+            {{ $lang := . }}
+            {{ if eq $lang.Language.Lang $currentLang }}
+            <span class="lang-current" aria-current="true">{{ upper $lang.Language.Lang }}</span>
+            {{ else }}
+            {{ $target := "" }}
+            {{ range $.Translations }}
+                {{ if eq .Language.Lang $lang.Language.Lang }}{{ $target = .Permalink }}{{ end }}
+            {{ end }}
+            {{ if not $target }}
+                {{ $target = printf "/%s/" $lang.Language.Lang }}
+            {{ end }}
+            <a href="{{ $target }}" class="lang-link" hreflang="{{ $lang.Language.Lang }}">{{ upper $lang.Language.Lang }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+
+    <nav class="nav-mobile" aria-label="{{ if $isEN }}Mobile navigation{{ else }}Navigation mobile{{ end }}">
+        {{ range .Site.Menus.main }}
+        {{ if not .Parent }}
+        <a href="{{ .URL | relURL }}" class="nav-link-mobile">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        {{ range .Children }}
+        <a href="{{ .URL | relURL }}" class="nav-link-mobile is-child">{{ .Name }}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ if gt (len hugo.Sites) 1 }}
+        <div class="lang-switcher-mobile">
+            {{ $currentLangM := .Site.Language.Lang }}
+            {{ range hugo.Sites }}
+            {{ $lang := . }}
+            {{ if eq $lang.Language.Lang $currentLangM }}
+            <span class="lang-current" aria-current="true">{{ upper $lang.Language.Lang }}</span>
+            {{ else }}
+            {{ $target := "" }}
+            {{ range $.Translations }}
+                {{ if eq .Language.Lang $lang.Language.Lang }}{{ $target = .Permalink }}{{ end }}
+            {{ end }}
+            {{ if not $target }}
+                {{ $target = printf "/%s/" $lang.Language.Lang }}
+            {{ end }}
+            <a href="{{ $target }}" class="lang-link" hreflang="{{ $lang.Language.Lang }}">{{ upper $lang.Language.Lang }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </nav>
+</header>
+
+<script>
+(function() {
+    var toggle = document.querySelector('.menu-toggle');
+    var mobileNav = document.querySelector('.nav-mobile');
+    if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+            var isOpen = mobileNav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    }
+    // Mega menu : open on click for keyboard, hover for mouse (CSS handles hover)
+    document.querySelectorAll('.mega-trigger').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            var item = btn.parentElement;
+            var isOpen = item.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            // close other open items
+            document.querySelectorAll('.nav-item.has-mega.open').forEach(function(other) {
+                if (other !== item) {
+                    other.classList.remove('open');
+                    var t = other.querySelector('.mega-trigger');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item.has-mega')) {
+            document.querySelectorAll('.nav-item.has-mega.open').forEach(function(item) {
+                item.classList.remove('open');
+                var t = item.querySelector('.mega-trigger');
+                if (t) t.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+})();
+</script>

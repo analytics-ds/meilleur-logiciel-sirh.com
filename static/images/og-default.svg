@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ogbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f9f4ec"/>
+    </linearGradient>
+    <radialGradient id="oggl1" cx="0.85" cy="0.15" r="0.5">
+      <stop offset="0%" stop-color="#1a6efc" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#1a6efc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="oggl2" cx="0.1" cy="0.9" r="0.5">
+      <stop offset="0%" stop-color="#ffbe57" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffbe57" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <rect width="1200" height="630" fill="url(#oggl1)"/>
+  <rect width="1200" height="630" fill="url(#oggl2)"/>
+
+  <!-- Logo a gauche -->
+  <g transform="translate(90 165)">
+    <polygon points="38,60 78,60 78,170 50,170 50,90 38,80" fill="#1a6efc" transform="scale(1.6)"/>
+    <polygon points="78,60 100,135 90,160 50,90" fill="#1a6efc" transform="scale(1.6)"/>
+    <polygon points="100,135 122,60 150,90 110,160" fill="#1a6efc" transform="scale(1.6)"/>
+    <polygon points="122,60 162,80 162,170 134,170 134,90" fill="#1a6efc" transform="scale(1.6)"/>
+    <polygon points="134,42 162,52 162,90 134,80" fill="#ffbe57" transform="scale(1.6)"/>
+    <circle cx="148" cy="25" r="14" fill="#ffbe57" transform="scale(1.6)"/>
+  </g>
+
+  <!-- Texte a droite -->
+  <g transform="translate(440 240)">
+    <text x="0" y="0" font-family="Parkinsans, Inter, sans-serif" font-size="64" font-weight="800" fill="#1a1a1a" letter-spacing="-2">Meilleur</text>
+    <text x="0" y="78" font-family="Parkinsans, Inter, sans-serif" font-size="64" font-weight="800" fill="#1a6efc" letter-spacing="-2">Logiciel SIRH</text>
+    <text x="0" y="135" font-family="Inter, sans-serif" font-size="22" font-weight="500" fill="#6d7d8c">Comparatif independant des logiciels SIRH</text>
+    <text x="0" y="165" font-family="Inter, sans-serif" font-size="22" font-weight="500" fill="#6d7d8c">du marche francais : paie, GTA, talents, formation.</text>
+  </g>
+
+  <!-- Petit badge en bas -->
+  <g transform="translate(440 470)">
+    <rect x="0" y="0" width="200" height="42" rx="21" fill="#ffffff" stroke="#e6e6e6"/>
+    <circle cx="22" cy="21" r="5" fill="#1a6efc"/>
+    <text x="38" y="28" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">meilleur-logiciel-sirh.com</text>
+  </g>
+</svg>

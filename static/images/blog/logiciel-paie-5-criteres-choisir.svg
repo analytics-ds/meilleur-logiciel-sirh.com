@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffbe57"/>
+      <stop offset="100%" stop-color="#ffdb99"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g2)"/>
+  <g transform="translate(600 300)">
+    <rect x="-130" y="-160" width="260" height="320" rx="24" fill="#ffffff" stroke="#1a1a1a" stroke-width="6"/>
+    <rect x="-100" y="-130" width="200" height="60" rx="10" fill="#1a6efc"/>
+    <text x="0" y="-90" fill="#ffffff" font-family="Inter, sans-serif" font-size="32" font-weight="700" text-anchor="middle">€ 2 845</text>
+    <g fill="#1a1a1a" font-family="Inter, sans-serif" font-size="18">
+      <text x="-90" y="-30">Salaire brut</text>
+      <text x="90" y="-30" text-anchor="end" font-weight="600">3 200 €</text>
+      <text x="-90" y="10">Cotisations</text>
+      <text x="90" y="10" text-anchor="end" font-weight="600">-735 €</text>
+      <text x="-90" y="50">CSG/CRDS</text>
+      <text x="90" y="50" text-anchor="end" font-weight="600">-310 €</text>
+    </g>
+    <line x1="-100" y1="80" x2="100" y2="80" stroke="#e6e6e6" stroke-width="2"/>
+    <g fill="#1a1a1a" font-family="Inter, sans-serif">
+      <text x="-90" y="110" font-size="18" font-weight="700">Net à payer</text>
+      <text x="90" y="110" font-size="20" font-weight="700" fill="#1a6efc" text-anchor="end">2 845 €</text>
+    </g>
+    <g fill="#ffbe57" stroke="#1a1a1a" stroke-width="3">
+      <circle cx="0" cy="155" r="8"/>
+    </g>
+  </g>
+  <g fill="#ffffff" opacity="0.4">
+    <circle cx="150" cy="120" r="50"/>
+    <circle cx="1050" cy="480" r="70"/>
+  </g>
+</svg>

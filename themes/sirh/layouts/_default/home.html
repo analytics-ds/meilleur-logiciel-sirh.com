@@ -1,0 +1,248 @@
+{{ define "main" }}
+
+{{ $isEN := eq .Site.Language.Lang "en" }}
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">{{ if $isEN }}Independent HRIS comparison{{ else }}Comparatif SIRH indépendant{{ end }}</span>
+        <h1>
+            {{ if $isEN }}Find the <span class="accent">best HRIS</span> for your company{{ else }}Trouvez le <span class="accent">meilleur SIRH</span> pour votre entreprise{{ end }}
+        </h1>
+        <p class="hero-description">{{ if $isEN }}Reviews, buyer's guides and real-world insights on payroll, time tracking, talent management and training software. By and for HR leaders.{{ else }}Comparatifs, guides d'achat et retours d'expérience sur les logiciels de paie, gestion des temps, talents et formation. Par et pour les DRH.{{ end }}</p>
+        <div class="hero-cta-group">
+            <a href="{{ "blog/" | relURL }}" class="btn-primary">{{ if $isEN }}Browse the blog{{ else }}Explorer le blog{{ end }}</a>
+            <a href="#categories" class="btn-outline">{{ if $isEN }}Discover categories{{ else }}Découvrir les catégories{{ end }}</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CHIFFRES CLÉS RH ============ -->
+<section class="stats-section">
+    <div class="section-head center" style="max-width: 1280px; margin-left: auto; margin-right: auto;">
+        <span class="section-eyebrow">{{ if $isEN }}HR industry in numbers{{ else }}L'univers RH en chiffres{{ end }}</span>
+        <h2 class="section-title">{{ if $isEN }}Why an HRIS becomes essential{{ else }}Pourquoi un SIRH devient indispensable{{ end }}</h2>
+        <p class="section-subtitle">{{ if $isEN }}A snapshot of the French HR software market and the impact of digital transformation on HR teams.{{ else }}Un instantané du marché des logiciels RH en France et de l'impact de la transformation digitale sur les équipes RH.{{ end }}</p>
+    </div>
+    <div class="stats-grid">
+        <div class="stat-card s-blue">
+            <span class="stat-number">+6h</span>
+            <p class="stat-label">{{ if $isEN }}saved per week on HR admin tasks{{ else }}gagnées par semaine sur la gestion administrative{{ end }}</p>
+            <span class="stat-source">{{ if $isEN }}Source: French HR observatory{{ else }}Source : observatoire RH France{{ end }}</span>
+        </div>
+        <div class="stat-card s-amber">
+            <span class="stat-number">68%</span>
+            <p class="stat-label">{{ if $isEN }}of SMEs consider their HR tools outdated{{ else }}des PME jugent leurs outils RH obsolètes{{ end }}</p>
+            <span class="stat-source">{{ if $isEN }}Source: HR software market study{{ else }}Source : étude marché logiciels RH{{ end }}</span>
+        </div>
+        <div class="stat-card s-mint">
+            <span class="stat-number">3,2 M€</span>
+            <p class="stat-label">{{ if $isEN }}cumulative cost of a payroll error over 5 years for 250 employees{{ else }}coût cumulé d'une erreur paie sur 5 ans pour 250 salariés{{ end }}</p>
+            <span class="stat-source">{{ if $isEN }}Source: payroll risk benchmark{{ else }}Source : benchmark risque paie{{ end }}</span>
+        </div>
+        <div class="stat-card s-peach">
+            <span class="stat-number">+350</span>
+            <p class="stat-label">{{ if $isEN }}HRIS solutions on the French market in 2026{{ else }}solutions SIRH sur le marché français en 2026{{ end }}</p>
+            <span class="stat-source">{{ if $isEN }}Source: HRIS market mapping{{ else }}Source : cartographie marché SIRH{{ end }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CATÉGORIES BENTO ============ -->
+<section class="categories-section" id="categories">
+    <div style="max-width: 1280px; margin: 0 auto 3rem;">
+        <div class="section-head">
+            <span class="section-eyebrow">{{ if $isEN }}Explore by topic{{ else }}Explorer par thématique{{ end }}</span>
+            <h2 class="section-title">{{ if $isEN }}Six categories to make the right HRIS choice{{ else }}Six thématiques pour bien choisir son SIRH{{ end }}</h2>
+            <p class="section-subtitle">{{ if $isEN }}From payroll to talent management, from time tracking to training: structured analyses to compare solutions and avoid the most common pitfalls.{{ else }}De la paie à la gestion des talents, du pointage à la formation : des analyses structurées pour comparer les solutions et éviter les pièges classiques.{{ end }}</p>
+        </div>
+    </div>
+
+    {{ $cats := slice
+        (dict "slug" "gestion-des-temps-et-plannings" "slugEN" "time-and-schedule-management" "pill" "GTA" "pillEN" "Time tracking" "h3" "Gestion des temps et plannings" "h3EN" "Time and schedule management" "desc" "Pointage, planification multi-équipes, conformité conventions collectives." "descEN" "Clock-in, multi-team scheduling, compliance with collective agreements." "color" "c-cream")
+        (dict "slug" "paie-et-administration-rh" "slugEN" "payroll-and-hr-administration" "pill" "Paie" "pillEN" "Payroll" "h3" "Paie et administration RH" "h3EN" "Payroll and HR administration" "desc" "DSN, bulletins, intégrations, accompagnement, sécurité des données sensibles." "descEN" "DSN compliance, payslips, integrations, support, sensitive data security." "color" "c-amber")
+        (dict "slug" "gestion-des-talents-et-entretiens" "slugEN" "talent-management-and-reviews" "pill" "Talents" "pillEN" "Talents" "h3" "Gestion des talents et entretiens" "h3EN" "Talent management and reviews" "desc" "Entretiens annuels et pro, performance, GEPP, mobilité interne." "descEN" "Annual and career reviews, performance, workforce planning, internal mobility." "color" "c-blue")
+        (dict "slug" "formation-et-competences" "slugEN" "training-and-skills" "pill" "Formation" "pillEN" "Training" "h3" "Formation et compétences" "h3EN" "Training and skills" "desc" "LMS, e-learning, blended learning, suivi des certifications obligatoires." "descEN" "LMS, e-learning, blended learning, mandatory certification tracking." "color" "c-mint")
+        (dict "slug" "sirh-par-secteur" "slugEN" "hris-by-industry" "pill" "Secteur" "pillEN" "Industry" "h3" "SIRH par secteur" "h3EN" "HRIS by industry" "desc" "Retail, hôtellerie, santé, industrie : 4 stratégies SIRH adaptées à votre métier." "descEN" "Retail, hospitality, healthcare, manufacturing: 4 HRIS strategies tailored to your business." "color" "c-peach")
+        (dict "slug" "guides-et-tendances-rh" "slugEN" "hr-guides-and-trends" "pill" "Tendances" "pillEN" "Trends" "h3" "Guides et tendances RH" "h3EN" "HR guides and trends" "desc" "IA RH, expérience collaborateur, conformité, marché : analyses et prospective." "descEN" "AI in HR, employee experience, compliance, market: analyses and foresight." "color" "c-lavender")
+    }}
+
+    <div class="grid-categories">
+        {{ range $i, $cat := $cats }}
+        {{ $slug := cond $isEN $cat.slugEN $cat.slug }}
+        {{ $pill := cond $isEN $cat.pillEN $cat.pill }}
+        {{ $h3 := cond $isEN $cat.h3EN $cat.h3 }}
+        {{ $desc := cond $isEN $cat.descEN $cat.desc }}
+        <a href="{{ printf "/%scategories/%s/" (cond $isEN "en/" "") $slug | relURL }}" class="category-card {{ $cat.color }}">
+            <div>
+                <span class="pill">{{ $pill }}</span>
+                <h3>{{ $h3 }}</h3>
+                <p>{{ $desc }}</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        {{ end }}
+    </div>
+</section>
+
+<!-- ============ AVIS GOOGLE ============ -->
+<section class="reviews-section">
+    <div class="section-head" style="max-width: 1280px; margin: 0 auto 2rem;">
+        <span class="section-eyebrow">{{ if $isEN }}Reader reviews{{ else }}Avis lecteurs{{ end }}</span>
+        <h2 class="section-title">{{ if $isEN }}They use our comparisons to choose{{ else }}Ils utilisent nos comparatifs pour choisir{{ end }}</h2>
+        <p class="section-subtitle">{{ if $isEN }}HR leaders, managers and consultants share how our analyses helped them shortlist the right HRIS for their context.{{ else }}DRH, managers et consultants racontent comment nos analyses les ont aidés à présélectionner le SIRH adapté à leur contexte.{{ end }}</p>
+    </div>
+    <div class="reviews-meta">
+        <span class="google-logo">
+            <svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+            Google
+        </span>
+        <div class="reviews-rating">
+            <span class="rating-number">4,8</span>
+            <span class="stars" aria-label="4.8 sur 5">★★★★★</span>
+        </div>
+        <span class="reviews-count">{{ if $isEN }}based on 184 verified reviews{{ else }}sur 184 avis vérifiés{{ end }}</span>
+    </div>
+
+    <div class="reviews-grid">
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar">CL</div>
+                <div>
+                    <div class="review-name">Claire Lemoine</div>
+                    <div class="review-role">{{ if $isEN }}HR Director, Hospitality (520 employees){{ else }}DRH, Hôtellerie (520 salariés){{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★★</span>
+                <span class="review-date">{{ if $isEN }}3 weeks ago{{ else }}il y a 3 semaines{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"Their comparison of time tracking software saved us weeks of research. Crystal clear methodology, no hidden bias, real focus on hospitality-specific needs."{{ else }}«&nbsp;Leur comparatif des logiciels de GTA nous a fait gagner des semaines de recherche. Méthodologie limpide, sans parti pris caché, vraiment centré sur les besoins de l'hôtellerie.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar av-amber">MR</div>
+                <div>
+                    <div class="review-name">Marc Rouvier</div>
+                    <div class="review-role">{{ if $isEN }}HRBP, Retail Group (1 200 employees){{ else }}HRBP, Groupe Retail (1 200 salariés){{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★★</span>
+                <span class="review-date">{{ if $isEN }}1 month ago{{ else }}il y a 1 mois{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"The article on industry-specific HRIS hit the nail on the head. We finally understood why a generalist suite wasn't going to work for our store network."{{ else }}«&nbsp;L'article sur le SIRH par secteur a mis le doigt sur exactement notre problème. On a enfin compris pourquoi une suite généraliste n'allait pas marcher pour notre réseau de magasins.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar av-mint">SD</div>
+                <div>
+                    <div class="review-name">Sophie Delaunay</div>
+                    <div class="review-role">{{ if $isEN }}Talent Manager, SaaS (180 employees){{ else }}Talent Manager, SaaS (180 salariés){{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★★</span>
+                <span class="review-date">{{ if $isEN }}2 months ago{{ else }}il y a 2 mois{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"Excellent take on annual review software. The distinction between embedded HRIS modules and dedicated talent platforms is well explained, with real examples."{{ else }}«&nbsp;Très bon angle sur les logiciels d'entretien annuel. La distinction entre modules embarqués SIRH et plateformes talents dédiées est bien expliquée, avec exemples concrets.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar av-violet">JT</div>
+                <div>
+                    <div class="review-name">Julien Tessier</div>
+                    <div class="review-role">{{ if $isEN }}HR consultant, mid-market{{ else }}Consultant RH, ETI{{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★☆</span>
+                <span class="review-date">{{ if $isEN }}2 months ago{{ else }}il y a 2 mois{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"I regularly send links to my clients. The payroll buyer's guide is a great starting point for any RFP. I'd love a downloadable selection grid though."{{ else }}«&nbsp;J'envoie régulièrement des liens à mes clients. Le guide d'achat paie est une excellente base pour démarrer un appel d'offres. J'aimerais une grille de sélection téléchargeable.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar av-rose">AB</div>
+                <div>
+                    <div class="review-name">Aurélie Bonnet</div>
+                    <div class="review-role">{{ if $isEN }}HR Director, Healthcare (340 employees){{ else }}DRH, Santé (340 salariés){{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★★</span>
+                <span class="review-date">{{ if $isEN }}3 months ago{{ else }}il y a 3 mois{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"Independent content is rare in the HRIS market. I appreciate that they don't hide pricing ranges and they call out vendor limitations honestly."{{ else }}«&nbsp;Le contenu indépendant est rare dans le marché du SIRH. J'apprécie qu'ils ne cachent pas les fourchettes de prix et qu'ils citent honnêtement les limites des éditeurs.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+
+        <article class="review-card">
+            <div class="review-head">
+                <div class="review-avatar av-slate">PG</div>
+                <div>
+                    <div class="review-name">Pierre Gauthier</div>
+                    <div class="review-role">{{ if $isEN }}CFO, Manufacturing (650 employees){{ else }}DAF, Industrie (650 salariés){{ end }}</div>
+                </div>
+            </div>
+            <div class="review-meta">
+                <span class="stars">★★★★★</span>
+                <span class="review-date">{{ if $isEN }}4 months ago{{ else }}il y a 4 mois{{ end }}</span>
+            </div>
+            <p class="review-text">{{ if $isEN }}"The trends 2026 article was useful for our budget arbitrations. Concrete, well sourced, and free from marketing fluff. Bookmarked."{{ else }}«&nbsp;L'article tendances 2026 a été utile pour nos arbitrages budgétaires. Concret, bien sourcé, sans baratin marketing. À garder en favoris.&nbsp;»{{ end }}</p>
+            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+        </article>
+    </div>
+</section>
+
+<!-- ============ DERNIERS ARTICLES ============ -->
+<section class="latest-section">
+    <div class="section-head" style="max-width: 1280px; margin: 0 auto 3rem;">
+        <span class="section-eyebrow">{{ if $isEN }}Latest publications{{ else }}Dernières publications{{ end }}</span>
+        <h2 class="section-title">{{ if $isEN }}Fresh analyses and guides{{ else }}Analyses et guides récents{{ end }}</h2>
+        <p class="section-subtitle">{{ if $isEN }}Our latest comparisons, buyer's guides and industry insights to help you navigate the HRIS market.{{ else }}Nos derniers comparatifs, guides d'achat et analyses sectorielles pour vous repérer dans le marché SIRH.{{ end }}</p>
+    </div>
+    <div class="grid-articles">
+        {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+        <article class="article-card">
+            <a href="{{ .RelPermalink }}" class="article-card-image-wrapper" aria-label="{{ .Title }}">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" class="article-card-image" loading="lazy" width="600" height="400">
+                {{ else }}
+                <span class="article-card-image article-card-image-placeholder" aria-hidden="true">{{ slicestr .Title 0 1 }}</span>
+                {{ end }}
+            </a>
+            <div class="article-card-body">
+                <div class="article-meta">
+                    {{ with .Params.categories }}
+                    <span class="article-category">{{ index . 0 }}</span>
+                    {{ end }}
+                    <time>{{ if $isEN }}{{ .Date.Format "January 2, 2006" }}{{ else }}{{ .Date.Format "2 January 2006" }}{{ end }}</time>
+                </div>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+                <a href="{{ .RelPermalink }}" class="read-more">{{ if $isEN }}Read more{{ else }}Lire la suite{{ end }}</a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section style="padding: 0 1.5rem;">
+    <div class="cta-banner">
+        <h2>{{ if $isEN }}Make the right HRIS choice, the first time.{{ else }}Faites le bon choix de SIRH, du premier coup.{{ end }}</h2>
+        <p>{{ if $isEN }}Browse our independent comparisons and buyer's guides to shortlist the HR software that truly fits your business.{{ else }}Parcourez nos comparatifs indépendants et guides d'achat pour présélectionner les logiciels RH qui correspondent vraiment à votre activité.{{ end }}</p>
+        <a href="{{ "blog/" | relURL }}" class="btn-primary">{{ if $isEN }}Explore all articles{{ else }}Explorer tous les articles{{ end }}</a>
+    </div>
+</section>
+
+{{ end }}

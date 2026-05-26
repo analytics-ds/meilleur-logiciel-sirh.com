@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+  <!-- M bleu : 4 segments formant la lettre M -->
+  <!-- Branche gauche -->
+  <polygon points="38,60 78,60 78,170 50,170 50,90 38,80" fill="#1a6efc"/>
+  <!-- Diagonale gauche du V central -->
+  <polygon points="78,60 100,135 90,160 50,90" fill="#1a6efc"/>
+  <!-- Diagonale droite du V central -->
+  <polygon points="100,135 122,60 150,90 110,160" fill="#1a6efc"/>
+  <!-- Branche droite (partie bleue basse) -->
+  <polygon points="122,60 162,80 162,170 134,170 134,90" fill="#1a6efc"/>
+  <!-- Barre du i amber (partie haute de la branche droite) -->
+  <polygon points="134,42 162,52 162,90 134,80" fill="#ffbe57"/>
+  <!-- Point du i amber -->
+  <circle cx="148" cy="25" r="14" fill="#ffbe57"/>
+</svg>

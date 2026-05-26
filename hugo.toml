@@ -1,0 +1,161 @@
+baseURL = "https://meilleur-logiciel-sirh.com/"
+title = "Meilleur Logiciel SIRH"
+theme = "sirh"
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = false
+enableEmoji = false
+removePathAccents = true
+
+[params]
+  description = "Comparatif indépendant des logiciels SIRH du marché : paie, GTA, talents, formation. Guides, retours d'expérience et tendances RH."
+  default_og_image = "/images/og-default.png"
+  logo = "/images/logo.svg"
+  founding_year = "2026"
+  expertise = ["Logiciels SIRH", "Gestion des temps", "Paie et administration RH", "Gestion des talents", "Formation et compétences"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  [languages.fr]
+    locale = "fr-FR"
+    label = "Français"
+    weight = 1
+    contentDir = "content"
+    title = "Meilleur Logiciel SIRH"
+    [languages.fr.params]
+      description = "Comparatif indépendant des logiciels SIRH du marché : paie, GTA, talents, formation. Guides, retours d'expérience et tendances RH."
+
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    weight = 2
+    contentDir = "content/en"
+    title = "Best HRIS Software"
+    [languages.en.params]
+      description = "Independent comparison of HRIS software: payroll, time tracking, talent management, training. Guides, real-world insights and HR trends."
+
+# Menu FR
+[[languages.fr.menus.main]]
+  name = "Gestion des temps et plannings"
+  url = "/categories/gestion-des-temps-et-plannings/"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Paie et administration RH"
+  url = "/categories/paie-et-administration-rh/"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Gestion des talents et entretiens"
+  url = "/categories/gestion-des-talents-et-entretiens/"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Formation et compétences"
+  url = "/categories/formation-et-competences/"
+  weight = 5
+[[languages.fr.menus.main]]
+  name = "SIRH par secteur"
+  identifier = "secteurs"
+  url = "/categories/sirh-par-secteur/"
+  weight = 6
+[[languages.fr.menus.main]]
+  name = "Retail"
+  parent = "secteurs"
+  url = "/categories/sirh-retail/"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "Hôtellerie et restauration"
+  parent = "secteurs"
+  url = "/categories/sirh-hotellerie-et-restauration/"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "Santé"
+  parent = "secteurs"
+  url = "/categories/sirh-sante/"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Industrie"
+  parent = "secteurs"
+  url = "/categories/sirh-industrie/"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Guides et tendances RH"
+  url = "/categories/guides-et-tendances-rh/"
+  weight = 7
+
+# Menu EN
+[[languages.en.menus.main]]
+  name = "Time and schedule management"
+  url = "/en/categories/time-and-schedule-management/"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Payroll and HR administration"
+  url = "/en/categories/payroll-and-hr-administration/"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "Talent management and reviews"
+  url = "/en/categories/talent-management-and-reviews/"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "Training and skills"
+  url = "/en/categories/training-and-skills/"
+  weight = 5
+[[languages.en.menus.main]]
+  name = "HRIS by industry"
+  identifier = "industries"
+  url = "/en/categories/hris-by-industry/"
+  weight = 6
+[[languages.en.menus.main]]
+  name = "Retail"
+  parent = "industries"
+  url = "/en/categories/hris-retail/"
+  weight = 1
+[[languages.en.menus.main]]
+  name = "Hospitality and restaurants"
+  parent = "industries"
+  url = "/en/categories/hris-hospitality-and-restaurants/"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "Healthcare"
+  parent = "industries"
+  url = "/en/categories/hris-healthcare/"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "Manufacturing"
+  parent = "industries"
+  url = "/en/categories/hris-manufacturing/"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "HR guides and trends"
+  url = "/en/categories/hr-guides-and-trends/"
+  weight = 7
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"

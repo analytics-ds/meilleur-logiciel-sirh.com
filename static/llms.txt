@@ -1,0 +1,33 @@
+# Meilleur Logiciel SIRH
+
+> Comparatif independant des logiciels SIRH du marche francais : paie, gestion des temps, talents, formation. Guides, retours d'experience et tendances RH pour les DRH, RRH et dirigeants.
+
+## A propos
+
+Meilleur Logiciel SIRH est un media independant edite par l'agence SEO datashake. Il publie des comparatifs, guides d'achat et analyses sur l'ecosysteme des logiciels SIRH (Systeme d'Information Ressources Humaines) en France. Le site couvre la paie, la gestion des temps et des activites, la gestion des talents, la formation et les usages sectoriels (retail, hotellerie, sante, industrie).
+
+## Contenu principal
+
+- Gestion des temps et plannings (GTA, pointage, planification)
+- Paie et administration RH (DSN, bulletin, conformite)
+- Gestion des talents et entretiens (performance, GEPP)
+- Formation et competences (LMS, e-learning)
+- SIRH par secteur (retail, hotellerie, sante, industrie)
+- Guides et tendances RH (analyses du marche, prospective)
+
+## Articles recents
+
+- Logiciel de gestion des temps : guide pour bien choisir — /blog/logiciel-gestion-des-temps-guide-2026/
+- Logiciel de paie : 5 criteres pour bien choisir — /blog/logiciel-paie-5-criteres-choisir/
+- Logiciel d'entretien annuel : pourquoi digitaliser — /blog/logiciel-entretien-annuel-pourquoi-digitaliser/
+- Plateforme LMS : comment choisir sa solution de formation — /blog/plateforme-lms-choisir-solution-formation/
+- SIRH par secteur : pourquoi le choix depend de votre metier — /blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier/
+- Tendances RH 2026 : ce qui change dans les logiciels SIRH — /blog/tendances-rh-2026-ce-qui-change-logiciels-sirh/
+
+## Informations techniques
+
+- Generateur : Hugo
+- Hebergement : GitHub Pages
+- Sitemap : https://meilleur-logiciel-sirh.com/sitemap.xml
+- RSS : https://meilleur-logiciel-sirh.com/index.xml
+- Langues : francais (par defaut), anglais sous /en/
