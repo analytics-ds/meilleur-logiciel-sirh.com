@@ -1,10 +1,10 @@
 # Meilleur Logiciel SIRH
 
-> Comparatif indépendant des logiciels SIRH du marché français : paie, gestion des temps, talents, formation. Guides, retours d'expérience et tendances RH pour les DRH, RRH et dirigeants.
+> Comparatif indépendant des logiciels SIRH du marché français : paie, gestion des temps, talents, formation. Guides, retours d'expérience et tendances RH pour les DRH, RRH et dirigeants. Site disponible en 4 langues : français, anglais, espagnol, italien.
 
 ## À propos
 
-Meilleur Logiciel SIRH est un média indépendant édité par l'agence SEO datashake. Il publie des comparatifs, guides d'achat et analyses sur l'écosystème des logiciels SIRH (Système d'Information Ressources Humaines) en France. Le site couvre la paie, la gestion des temps et des activités, la gestion des talents, la formation et les usages sectoriels (retail, hôtellerie, santé, industrie). Tous les contenus sont rédigés ou supervisés par Mathilde Lefranc, consultante SIRH avec plus de 12 ans d'expérience en transformation digitale RH.
+Meilleur Logiciel SIRH est un média indépendant édité par l'agence SEO datashake. Il publie des comparatifs, guides d'achat et analyses sur l'écosystème des logiciels SIRH (Système d'Information Ressources Humaines) en France et dans les marchés européens (Espagne, Italie, Royaume-Uni). Le site couvre la paie, la gestion des temps et des activités, la gestion des talents, la formation et les usages sectoriels (retail, hôtellerie, santé, industrie). Tous les contenus sont rédigés ou supervisés par Mathilde Lefranc, consultante SIRH avec plus de 12 ans d'expérience en transformation digitale RH.
 
 ## Méthodologie
 
@@ -15,6 +15,15 @@ Les comparatifs et analyses publiés sur Meilleur Logiciel SIRH sont basés sur 
 - L'évaluation sectorielle (retail, hôtellerie et restauration, santé, industrie)
 
 Le site ne vend ni logiciel ni service. Aucun éditeur SIRH ne rémunère pour figurer dans nos contenus.
+
+## Langues disponibles
+
+- Français (par défaut) : https://meilleur-logiciel-sirh.com/
+- English : https://meilleur-logiciel-sirh.com/en/
+- Español : https://meilleur-logiciel-sirh.com/es/
+- Italiano : https://meilleur-logiciel-sirh.com/it/
+
+Chaque article est publié dans les 4 langues avec un translationKey commun. La navigation, les méga menus, le footer et les pages catégories sont entièrement traduits.
 
 ## Catégories principales
 
@@ -43,26 +52,50 @@ Le site ne vend ni logiciel ni service. Aucun éditeur SIRH ne rémunère pour f
 - HRIS by industry: why the choice depends on your business : https://meilleur-logiciel-sirh.com/en/blog/hris-by-industry-why-the-choice-depends-on-your-business/
 - HR trends 2026: what changes in HRIS software : https://meilleur-logiciel-sirh.com/en/blog/hr-trends-2026-what-changes-in-hris-software/
 
+## Articles de référence (ES)
+
+- Software de gestión de tiempos: guía para elegir bien : https://meilleur-logiciel-sirh.com/es/blog/software-gestion-tiempos-guia-2026/
+- Software de nómina: 5 criterios para elegir bien : https://meilleur-logiciel-sirh.com/es/blog/software-nomina-5-criterios/
+- Software de evaluación anual: por qué digitalizar : https://meilleur-logiciel-sirh.com/es/blog/software-evaluacion-anual-por-que-digitalizar/
+- Plataforma LMS: cómo elegir tu solución de formación : https://meilleur-logiciel-sirh.com/es/blog/plataforma-lms-elegir-solucion-formacion/
+- HRIS por sector: por qué la elección depende de tu sector : https://meilleur-logiciel-sirh.com/es/blog/hris-por-sector-por-que-la-eleccion-depende-de-tu-sector/
+- Tendencias HR 2026: lo que cambia en el software HRIS : https://meilleur-logiciel-sirh.com/es/blog/tendencias-hr-2026-que-cambia-en-software-hris/
+
+## Articles de référence (IT)
+
+- Software gestione presenze: guida per scegliere bene : https://meilleur-logiciel-sirh.com/it/blog/software-gestione-presenze-guida-2026/
+- Software paghe: 5 criteri per scegliere bene : https://meilleur-logiciel-sirh.com/it/blog/software-paghe-5-criteri/
+- Software colloquio annuale: perché digitalizzare : https://meilleur-logiciel-sirh.com/it/blog/software-colloquio-annuale-perche-digitalizzare/
+- Piattaforma LMS: come scegliere la soluzione di formazione : https://meilleur-logiciel-sirh.com/it/blog/piattaforma-lms-scegliere-soluzione-formazione/
+- HR per settore: perché la scelta dipende dal tuo settore : https://meilleur-logiciel-sirh.com/it/blog/hr-per-settore-perche-la-scelta-dipende-dal-settore/
+- Tendenze HR 2026: cosa cambia nei software HR : https://meilleur-logiciel-sirh.com/it/blog/tendenze-hr-2026-cosa-cambia-software-hr/
+
 ## Pages clés
 
 - Homepage FR : https://meilleur-logiciel-sirh.com/
 - Homepage EN : https://meilleur-logiciel-sirh.com/en/
+- Homepage ES : https://meilleur-logiciel-sirh.com/es/
+- Homepage IT : https://meilleur-logiciel-sirh.com/it/
 - Blog FR : https://meilleur-logiciel-sirh.com/blog/
 - Blog EN : https://meilleur-logiciel-sirh.com/en/blog/
-- Plan du site : https://meilleur-logiciel-sirh.com/plan-du-site/
+- Blog ES : https://meilleur-logiciel-sirh.com/es/blog/
+- Blog IT : https://meilleur-logiciel-sirh.com/it/blog/
+- Plan du site FR : https://meilleur-logiciel-sirh.com/plan-du-site/
+- Sitemap EN : https://meilleur-logiciel-sirh.com/en/site-map/
+- Mapa del sitio ES : https://meilleur-logiciel-sirh.com/es/mapa-del-sitio/
+- Mappa del sito IT : https://meilleur-logiciel-sirh.com/it/mappa-del-sito/
 - Page auteur Mathilde Lefranc : https://meilleur-logiciel-sirh.com/authors/mathilde-lefranc/
 
 ## Informations techniques
 
 - Générateur : Hugo (site statique)
 - Hébergement : GitHub Pages (org analytics-ds)
-- Langues : français (par défaut) + anglais (sous /en/)
-- Sitemap XML : https://meilleur-logiciel-sirh.com/sitemap.xml
-- Sitemap FR : https://meilleur-logiciel-sirh.com/fr/sitemap.xml
-- Sitemap EN : https://meilleur-logiciel-sirh.com/en/sitemap.xml
-- RSS FR : https://meilleur-logiciel-sirh.com/index.xml
-- RSS EN : https://meilleur-logiciel-sirh.com/en/index.xml
+- Langues : 4 (français par défaut + anglais + espagnol + italien, toutes en sous-dossier)
+- Sitemap XML : https://meilleur-logiciel-sirh.com/sitemap.xml (index)
+- Sitemaps par langue : /fr/sitemap.xml, /en/sitemap.xml, /es/sitemap.xml, /it/sitemap.xml
+- RSS feeds : /index.xml, /en/index.xml, /es/index.xml, /it/index.xml + RSS par section et taxonomy
 - Schema.org : Organization, WebSite, BlogPosting, Person, BreadcrumbList, FAQPage
+- Hreflang : balises alternate automatiques entre les 4 langues via translationKey
 
 ## Contact
 

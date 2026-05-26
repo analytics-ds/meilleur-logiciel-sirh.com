@@ -1,13 +1,18 @@
 {{ define "main" }}
-{{ $isEN := eq .Site.Language.Lang "en" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $h1 := dict "fr" "Page introuvable" "en" "Page not found" "es" "Página no encontrada" "it" "Pagina non trovata" }}
+{{ $p := dict "fr" "La page que vous recherchez n'existe pas ou a été déplacée." "en" "The page you are looking for does not exist or has been moved." "es" "La página que buscas no existe o ha sido movida." "it" "La pagina che stai cercando non esiste o è stata spostata." }}
+{{ $home := dict "fr" "Retour à l'accueil" "en" "Back to homepage" "es" "Volver al inicio" "it" "Torna alla home" }}
+{{ $blog := dict "fr" "Voir les articles" "en" "Browse articles" "es" "Ver artículos" "it" "Vedi articoli" }}
+
 <section class="error-page">
     <div class="container">
         <span class="error-code">404</span>
-        <h1>{{ if $isEN }}Page not found{{ else }}Page introuvable{{ end }}</h1>
-        <p>{{ if $isEN }}The page you are looking for does not exist or has been moved.{{ else }}La page que vous recherchez n'existe pas ou a été déplacée.{{ end }}</p>
+        <h1>{{ index $h1 $lang }}</h1>
+        <p>{{ index $p $lang }}</p>
         <div class="error-links">
-            <a href="{{ "/" | relURL }}" class="btn-primary">{{ if $isEN }}Back to homepage{{ else }}Retour à l'accueil{{ end }}</a>
-            <a href="{{ "blog/" | relURL }}" class="btn-outline">{{ if $isEN }}Browse articles{{ else }}Voir les articles{{ end }}</a>
+            <a href="{{ "/" | relURL }}" class="btn-primary">{{ index $home $lang }}</a>
+            <a href="{{ "blog/" | relURL }}" class="btn-outline">{{ index $blog $lang }}</a>
         </div>
     </div>
 </section>

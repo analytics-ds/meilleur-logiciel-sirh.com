@@ -1,19 +1,25 @@
 {{ define "main" }}
-{{ $isEN := eq .Site.Language.Lang "en" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $eyeCat := dict "fr" "Catégorie" "en" "Category" "es" "Categoría" "it" "Categoria" }}
+{{ $eyeSec := dict "fr" "Rubrique" "en" "Section" "es" "Sección" "it" "Rubrica" }}
+{{ $artWord := dict "fr" "article" "en" "article" "es" "artículo" "it" "articolo" }}
+{{ $artsWord := dict "fr" "articles" "en" "articles" "es" "artículos" "it" "articoli" }}
+{{ $coming := dict "fr" "Articles à venir" "en" "Coming soon" "es" "Próximamente" "it" "Prossimamente" }}
+{{ $minWord := dict "fr" "min" "en" "min" "es" "min" "it" "min" }}
+{{ $dateFmt := dict "fr" "2 January 2006" "en" "January 2, 2006" "es" "2 de January de 2006" "it" "2 January 2006" }}
 
 <section class="list-header">
     <div>
         {{ $eyebrow := "" }}
-        {{ if eq .Kind "taxonomy" }}{{ $eyebrow = cond $isEN "Category" "Catégorie" }}{{ end }}
-        {{ if eq .Kind "term" }}{{ $eyebrow = cond $isEN "Category" "Catégorie" }}{{ end }}
-        {{ if eq .Kind "section" }}{{ $eyebrow = cond $isEN "Section" "Rubrique" }}{{ end }}
+        {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}{{ $eyebrow = index $eyeCat $lang }}{{ end }}
+        {{ if eq .Kind "section" }}{{ $eyebrow = index $eyeSec $lang }}{{ end }}
         {{ with $eyebrow }}<span class="list-eyebrow">{{ . }}</span>{{ end }}
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
         {{ if .Pages }}
-        <span class="list-count">{{ len .Pages }} {{ if $isEN }}{{ if gt (len .Pages) 1 }}articles{{ else }}article{{ end }}{{ else }}{{ if gt (len .Pages) 1 }}articles{{ else }}article{{ end }}{{ end }}</span>
+        <span class="list-count">{{ len .Pages }} {{ if gt (len .Pages) 1 }}{{ index $artsWord $lang }}{{ else }}{{ index $artWord $lang }}{{ end }}</span>
         {{ else }}
-        <span class="list-count">{{ if $isEN }}Coming soon{{ else }}Articles à venir{{ end }}</span>
+        <span class="list-count">{{ index $coming $lang }}</span>
         {{ end }}
     </div>
 </section>
@@ -31,19 +37,15 @@
             </a>
             <div class="article-body">
                 <div class="article-meta">
-                    {{ with .Params.categories }}
-                    <span class="article-category">{{ index . 0 }}</span>
-                    {{ end }}
-                    <time>{{ if $isEN }}{{ .Date.Format "January 2, 2006" }}{{ else }}{{ .Date.Format "2 January 2006" }}{{ end }}</time>
-                    {{ if .Params.readingTime }}
-                    <span class="reading-time">{{ .ReadingTime }} min</span>
-                    {{ end }}
+                    {{ with .Params.categories }}<span class="article-category">{{ index . 0 }}</span>{{ end }}
+                    <time>{{ .Date.Format (index $dateFmt $lang) }}</time>
+                    {{ if .Params.readingTime }}<span class="reading-time">{{ .ReadingTime }} {{ index $minWord $lang }}</span>{{ end }}
                 </div>
                 <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                 <p>{{ .Description }}</p>
                 <div class="article-tags">
                     {{ range .Params.tags }}
-                    <a href="{{ if $isEN }}/en/tags/{{ else }}/tags/{{ end }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+                    <a href="{{ printf "/%s/tags/" (cond (eq $lang "fr") "" $lang) | replaceRE "//+" "/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
                     {{ end }}
                 </div>
             </div>
@@ -51,5 +53,4 @@
         {{ end }}
     </div>
 </section>
-
 {{ end }}

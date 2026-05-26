@@ -49,6 +49,24 @@ titleCaseStyle = "none"
     [languages.en.params]
       description = "Independent comparison of HRIS software: payroll, time tracking, talent management, training. Guides, real-world insights and HR trends."
 
+  [languages.es]
+    locale = "es-ES"
+    label = "Español"
+    weight = 3
+    contentDir = "content/es"
+    title = "Mejor Software RRHH"
+    [languages.es.params]
+      description = "Comparativa independiente de software de RRHH: nómina, gestión de tiempos, talento, formación. Guías, experiencias y tendencias HR."
+
+  [languages.it]
+    locale = "it-IT"
+    label = "Italiano"
+    weight = 4
+    contentDir = "content/it"
+    title = "Miglior Software HR"
+    [languages.it.params]
+      description = "Confronto indipendente dei software HR: paghe, gestione presenze, talenti, formazione. Guide, esperienze reali e tendenze HR."
+
 # Menu FR
 [[languages.fr.menus.main]]
   name = "Gestion des temps et plannings"
@@ -141,6 +159,100 @@ titleCaseStyle = "none"
 [[languages.en.menus.main]]
   name = "HR guides and trends"
   url = "/en/categories/hr-guides-and-trends/"
+  weight = 7
+
+# Menu ES
+[[languages.es.menus.main]]
+  name = "Gestión de tiempos"
+  url = "/es/categories/gestion-de-tiempos-y-horarios/"
+  weight = 2
+[[languages.es.menus.main]]
+  name = "Nómina y administración RH"
+  url = "/es/categories/nomina-y-administracion-rh/"
+  weight = 3
+[[languages.es.menus.main]]
+  name = "Talento y evaluaciones"
+  url = "/es/categories/talento-y-evaluaciones/"
+  weight = 4
+[[languages.es.menus.main]]
+  name = "Formación y competencias"
+  url = "/es/categories/formacion-y-competencias/"
+  weight = 5
+[[languages.es.menus.main]]
+  name = "HRIS por sector"
+  identifier = "sectores"
+  url = "/es/categories/hris-por-sector/"
+  weight = 6
+[[languages.es.menus.main]]
+  name = "Retail"
+  parent = "sectores"
+  url = "/es/categories/hris-retail/"
+  weight = 1
+[[languages.es.menus.main]]
+  name = "Hostelería y restauración"
+  parent = "sectores"
+  url = "/es/categories/hris-hosteleria-y-restauracion/"
+  weight = 2
+[[languages.es.menus.main]]
+  name = "Salud"
+  parent = "sectores"
+  url = "/es/categories/hris-salud/"
+  weight = 3
+[[languages.es.menus.main]]
+  name = "Industria"
+  parent = "sectores"
+  url = "/es/categories/hris-industria/"
+  weight = 4
+[[languages.es.menus.main]]
+  name = "Guías y tendencias HR"
+  url = "/es/categories/guias-y-tendencias-hr/"
+  weight = 7
+
+# Menu IT
+[[languages.it.menus.main]]
+  name = "Gestione presenze"
+  url = "/it/categories/gestione-presenze-e-turni/"
+  weight = 2
+[[languages.it.menus.main]]
+  name = "Paghe e amministrazione HR"
+  url = "/it/categories/paghe-e-amministrazione-hr/"
+  weight = 3
+[[languages.it.menus.main]]
+  name = "Talenti e colloqui"
+  url = "/it/categories/talenti-e-colloqui/"
+  weight = 4
+[[languages.it.menus.main]]
+  name = "Formazione e competenze"
+  url = "/it/categories/formazione-e-competenze/"
+  weight = 5
+[[languages.it.menus.main]]
+  name = "HR per settore"
+  identifier = "settori"
+  url = "/it/categories/hr-per-settore/"
+  weight = 6
+[[languages.it.menus.main]]
+  name = "Retail"
+  parent = "settori"
+  url = "/it/categories/hr-retail/"
+  weight = 1
+[[languages.it.menus.main]]
+  name = "Hotellerie e ristorazione"
+  parent = "settori"
+  url = "/it/categories/hr-hotellerie-e-ristorazione/"
+  weight = 2
+[[languages.it.menus.main]]
+  name = "Sanità"
+  parent = "settori"
+  url = "/it/categories/hr-sanita/"
+  weight = 3
+[[languages.it.menus.main]]
+  name = "Industria"
+  parent = "settori"
+  url = "/it/categories/hr-industria/"
+  weight = 4
+[[languages.it.menus.main]]
+  name = "Guide e tendenze HR"
+  url = "/it/categories/guide-e-tendenze-hr/"
   weight = 7
 
 [related]

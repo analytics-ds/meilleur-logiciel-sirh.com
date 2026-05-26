@@ -1,83 +1,92 @@
 {{ define "main" }}
 
-{{ $isEN := eq .Site.Language.Lang "en" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $base := printf "/%s/" $lang }}
+{{ if eq $lang "fr" }}{{ $base = "/" }}{{ end }}
+
+{{/* Date format par langue */}}
+{{ $dateFmt := dict "fr" "2 January 2006" "en" "January 2, 2006" "es" "2 de January de 2006" "it" "2 January 2006" }}
 
 <!-- ============ HERO ============ -->
+{{ $heroBadge := dict "fr" "Comparatif SIRH indépendant" "en" "Independent HRIS comparison" "es" "Comparativa HRIS independiente" "it" "Confronto HR indipendente" }}
+{{ $heroTitle1 := dict "fr" "Trouvez le" "en" "Find the" "es" "Encuentra el" "it" "Trova il" }}
+{{ $heroTitleAccent := dict "fr" "meilleur SIRH" "en" "best HRIS" "es" "mejor SIRH" "it" "miglior HRIS" }}
+{{ $heroTitle2 := dict "fr" "pour votre entreprise" "en" "for your company" "es" "para tu empresa" "it" "per la tua azienda" }}
+{{ $heroDesc := dict "fr" "Comparatifs, guides d'achat et retours d'expérience sur les logiciels de paie, gestion des temps, talents et formation. Par et pour les DRH." "en" "Reviews, buyer's guides and real-world insights on payroll, time tracking, talent management and training software. By and for HR leaders." "es" "Comparativas, guías de compra y experiencias reales sobre software de nómina, gestión de tiempos, talento y formación. Por y para directores de RRHH." "it" "Confronti, guide d'acquisto e esperienze reali su software paghe, gestione presenze, talenti e formazione. Da e per i direttori HR." }}
+{{ $ctaBlog := dict "fr" "Explorer le blog" "en" "Browse the blog" "es" "Explorar el blog" "it" "Esplora il blog" }}
+{{ $ctaCats := dict "fr" "Découvrir les catégories" "en" "Discover categories" "es" "Descubrir las categorías" "it" "Scopri le categorie" }}
+
 <section class="hero">
     <div class="hero-content">
-        <span class="hero-badge">{{ if $isEN }}Independent HRIS comparison{{ else }}Comparatif SIRH indépendant{{ end }}</span>
-        <h1>
-            {{ if $isEN }}Find the <span class="accent">best HRIS</span> for your company{{ else }}Trouvez le <span class="accent">meilleur SIRH</span> pour votre entreprise{{ end }}
-        </h1>
-        <p class="hero-description">{{ if $isEN }}Reviews, buyer's guides and real-world insights on payroll, time tracking, talent management and training software. By and for HR leaders.{{ else }}Comparatifs, guides d'achat et retours d'expérience sur les logiciels de paie, gestion des temps, talents et formation. Par et pour les DRH.{{ end }}</p>
+        <span class="hero-badge">{{ index $heroBadge $lang }}</span>
+        <h1>{{ index $heroTitle1 $lang }} <span class="accent">{{ index $heroTitleAccent $lang }}</span> {{ index $heroTitle2 $lang }}</h1>
+        <p class="hero-description">{{ index $heroDesc $lang }}</p>
         <div class="hero-cta-group">
-            <a href="{{ "blog/" | relURL }}" class="btn-primary">{{ if $isEN }}Browse the blog{{ else }}Explorer le blog{{ end }}</a>
-            <a href="#categories" class="btn-outline">{{ if $isEN }}Discover categories{{ else }}Découvrir les catégories{{ end }}</a>
+            <a href="{{ printf "%sblog/" $base | relURL }}" class="btn-primary">{{ index $ctaBlog $lang }}</a>
+            <a href="#categories" class="btn-outline">{{ index $ctaCats $lang }}</a>
         </div>
     </div>
 </section>
 
 <!-- ============ CHIFFRES CLÉS RH ============ -->
+{{ $statEyebrow := dict "fr" "L'univers RH en chiffres" "en" "HR industry in numbers" "es" "El universo RRHH en cifras" "it" "Il mondo HR in numeri" }}
+{{ $statTitle := dict "fr" "Pourquoi un SIRH devient indispensable" "en" "Why an HRIS becomes essential" "es" "Por qué un HRIS se vuelve indispensable" "it" "Perché un HRIS diventa indispensabile" }}
+{{ $statSub := dict "fr" "Un instantané du marché des logiciels RH en France et de l'impact de la transformation digitale sur les équipes RH." "en" "A snapshot of the HR software market and the impact of digital transformation on HR teams." "es" "Una instantánea del mercado de software RRHH y el impacto de la transformación digital en los equipos HR." "it" "Una panoramica del mercato dei software HR e l'impatto della trasformazione digitale sui team HR." }}
+{{ $stat1Num := dict "fr" "+6h" "en" "+6h" "es" "+6h" "it" "+6h" }}
+{{ $stat1Lbl := dict "fr" "gagnées par semaine sur la gestion administrative" "en" "saved per week on HR admin tasks" "es" "ganadas por semana en gestión administrativa" "it" "guadagnate a settimana sulla gestione amministrativa" }}
+{{ $stat2Num := dict "fr" "68%" "en" "68%" "es" "68%" "it" "68%" }}
+{{ $stat2Lbl := dict "fr" "des PME jugent leurs outils RH obsolètes" "en" "of SMEs consider their HR tools outdated" "es" "de las pymes consideran sus herramientas RRHH obsoletas" "it" "delle PMI considera obsoleti i propri strumenti HR" }}
+{{ $stat3Num := dict "fr" "3,2 M€" "en" "€3.2M" "es" "3,2 M€" "it" "3,2 M€" }}
+{{ $stat3Lbl := dict "fr" "coût cumulé d'une erreur paie sur 5 ans pour 250 salariés" "en" "5-year cumulative cost of a payroll error for 250 employees" "es" "coste acumulado de un error de nómina en 5 años para 250 empleados" "it" "costo cumulato di un errore paghe su 5 anni per 250 dipendenti" }}
+{{ $stat4Num := dict "fr" "+350" "en" "+350" "es" "+350" "it" "+350" }}
+{{ $stat4Lbl := dict "fr" "solutions SIRH sur le marché en 2026" "en" "HRIS solutions on the market in 2026" "es" "soluciones HRIS en el mercado en 2026" "it" "soluzioni HR sul mercato nel 2026" }}
+{{ $statSrc := dict "fr" "Source : étude marché logiciels RH" "en" "Source: HR software market study" "es" "Fuente: estudio mercado software RRHH" "it" "Fonte: studio mercato software HR" }}
+
 <section class="stats-section">
     <div class="section-head center" style="max-width: 1280px; margin-left: auto; margin-right: auto;">
-        <span class="section-eyebrow">{{ if $isEN }}HR industry in numbers{{ else }}L'univers RH en chiffres{{ end }}</span>
-        <h2 class="section-title">{{ if $isEN }}Why an HRIS becomes essential{{ else }}Pourquoi un SIRH devient indispensable{{ end }}</h2>
-        <p class="section-subtitle">{{ if $isEN }}A snapshot of the French HR software market and the impact of digital transformation on HR teams.{{ else }}Un instantané du marché des logiciels RH en France et de l'impact de la transformation digitale sur les équipes RH.{{ end }}</p>
+        <span class="section-eyebrow">{{ index $statEyebrow $lang }}</span>
+        <h2 class="section-title">{{ index $statTitle $lang }}</h2>
+        <p class="section-subtitle">{{ index $statSub $lang }}</p>
     </div>
     <div class="stats-grid">
-        <div class="stat-card s-blue">
-            <span class="stat-number">+6h</span>
-            <p class="stat-label">{{ if $isEN }}saved per week on HR admin tasks{{ else }}gagnées par semaine sur la gestion administrative{{ end }}</p>
-            <span class="stat-source">{{ if $isEN }}Source: French HR observatory{{ else }}Source : observatoire RH France{{ end }}</span>
-        </div>
-        <div class="stat-card s-amber">
-            <span class="stat-number">68%</span>
-            <p class="stat-label">{{ if $isEN }}of SMEs consider their HR tools outdated{{ else }}des PME jugent leurs outils RH obsolètes{{ end }}</p>
-            <span class="stat-source">{{ if $isEN }}Source: HR software market study{{ else }}Source : étude marché logiciels RH{{ end }}</span>
-        </div>
-        <div class="stat-card s-mint">
-            <span class="stat-number">3,2 M€</span>
-            <p class="stat-label">{{ if $isEN }}cumulative cost of a payroll error over 5 years for 250 employees{{ else }}coût cumulé d'une erreur paie sur 5 ans pour 250 salariés{{ end }}</p>
-            <span class="stat-source">{{ if $isEN }}Source: payroll risk benchmark{{ else }}Source : benchmark risque paie{{ end }}</span>
-        </div>
-        <div class="stat-card s-peach">
-            <span class="stat-number">+350</span>
-            <p class="stat-label">{{ if $isEN }}HRIS solutions on the French market in 2026{{ else }}solutions SIRH sur le marché français en 2026{{ end }}</p>
-            <span class="stat-source">{{ if $isEN }}Source: HRIS market mapping{{ else }}Source : cartographie marché SIRH{{ end }}</span>
-        </div>
+        <div class="stat-card s-blue"><span class="stat-number">{{ index $stat1Num $lang }}</span><p class="stat-label">{{ index $stat1Lbl $lang }}</p><span class="stat-source">{{ index $statSrc $lang }}</span></div>
+        <div class="stat-card s-amber"><span class="stat-number">{{ index $stat2Num $lang }}</span><p class="stat-label">{{ index $stat2Lbl $lang }}</p><span class="stat-source">{{ index $statSrc $lang }}</span></div>
+        <div class="stat-card s-mint"><span class="stat-number">{{ index $stat3Num $lang }}</span><p class="stat-label">{{ index $stat3Lbl $lang }}</p><span class="stat-source">{{ index $statSrc $lang }}</span></div>
+        <div class="stat-card s-peach"><span class="stat-number">{{ index $stat4Num $lang }}</span><p class="stat-label">{{ index $stat4Lbl $lang }}</p><span class="stat-source">{{ index $statSrc $lang }}</span></div>
     </div>
 </section>
 
 <!-- ============ CATÉGORIES BENTO ============ -->
+{{ $catEyebrow := dict "fr" "Explorer par thématique" "en" "Explore by topic" "es" "Explorar por tema" "it" "Esplora per tema" }}
+{{ $catTitle := dict "fr" "Six thématiques pour bien choisir son SIRH" "en" "Six categories to make the right HRIS choice" "es" "Seis temáticas para elegir bien tu HRIS" "it" "Sei tematiche per scegliere il giusto HR" }}
+{{ $catSub := dict "fr" "De la paie à la gestion des talents, du pointage à la formation : des analyses structurées pour comparer les solutions et éviter les pièges classiques." "en" "From payroll to talent, from time tracking to training: structured analyses to compare solutions and avoid common pitfalls." "es" "De la nómina a la gestión del talento, del fichaje a la formación: análisis estructurados para comparar soluciones y evitar errores comunes." "it" "Dalle paghe alla gestione dei talenti, dal pointing alla formazione: analisi strutturate per confrontare le soluzioni ed evitare gli errori classici." }}
+
 <section class="categories-section" id="categories">
     <div style="max-width: 1280px; margin: 0 auto 3rem;">
         <div class="section-head">
-            <span class="section-eyebrow">{{ if $isEN }}Explore by topic{{ else }}Explorer par thématique{{ end }}</span>
-            <h2 class="section-title">{{ if $isEN }}Six categories to make the right HRIS choice{{ else }}Six thématiques pour bien choisir son SIRH{{ end }}</h2>
-            <p class="section-subtitle">{{ if $isEN }}From payroll to talent management, from time tracking to training: structured analyses to compare solutions and avoid the most common pitfalls.{{ else }}De la paie à la gestion des talents, du pointage à la formation : des analyses structurées pour comparer les solutions et éviter les pièges classiques.{{ end }}</p>
+            <span class="section-eyebrow">{{ index $catEyebrow $lang }}</span>
+            <h2 class="section-title">{{ index $catTitle $lang }}</h2>
+            <p class="section-subtitle">{{ index $catSub $lang }}</p>
         </div>
     </div>
 
+    {{/* Definition des 6 categories avec slug + textes par langue */}}
     {{ $cats := slice
-        (dict "slug" "gestion-des-temps-et-plannings" "slugEN" "time-and-schedule-management" "pill" "GTA" "pillEN" "Time tracking" "h3" "Gestion des temps et plannings" "h3EN" "Time and schedule management" "desc" "Pointage, planification multi-équipes, conformité conventions collectives." "descEN" "Clock-in, multi-team scheduling, compliance with collective agreements." "color" "c-cream")
-        (dict "slug" "paie-et-administration-rh" "slugEN" "payroll-and-hr-administration" "pill" "Paie" "pillEN" "Payroll" "h3" "Paie et administration RH" "h3EN" "Payroll and HR administration" "desc" "DSN, bulletins, intégrations, accompagnement, sécurité des données sensibles." "descEN" "DSN compliance, payslips, integrations, support, sensitive data security." "color" "c-amber")
-        (dict "slug" "gestion-des-talents-et-entretiens" "slugEN" "talent-management-and-reviews" "pill" "Talents" "pillEN" "Talents" "h3" "Gestion des talents et entretiens" "h3EN" "Talent management and reviews" "desc" "Entretiens annuels et pro, performance, GEPP, mobilité interne." "descEN" "Annual and career reviews, performance, workforce planning, internal mobility." "color" "c-blue")
-        (dict "slug" "formation-et-competences" "slugEN" "training-and-skills" "pill" "Formation" "pillEN" "Training" "h3" "Formation et compétences" "h3EN" "Training and skills" "desc" "LMS, e-learning, blended learning, suivi des certifications obligatoires." "descEN" "LMS, e-learning, blended learning, mandatory certification tracking." "color" "c-mint")
-        (dict "slug" "sirh-par-secteur" "slugEN" "hris-by-industry" "pill" "Secteur" "pillEN" "Industry" "h3" "SIRH par secteur" "h3EN" "HRIS by industry" "desc" "Retail, hôtellerie, santé, industrie : 4 stratégies SIRH adaptées à votre métier." "descEN" "Retail, hospitality, healthcare, manufacturing: 4 HRIS strategies tailored to your business." "color" "c-peach")
-        (dict "slug" "guides-et-tendances-rh" "slugEN" "hr-guides-and-trends" "pill" "Tendances" "pillEN" "Trends" "h3" "Guides et tendances RH" "h3EN" "HR guides and trends" "desc" "IA RH, expérience collaborateur, conformité, marché : analyses et prospective." "descEN" "AI in HR, employee experience, compliance, market: analyses and foresight." "color" "c-lavender")
+        (dict "slug" (dict "fr" "gestion-des-temps-et-plannings" "en" "time-and-schedule-management" "es" "gestion-de-tiempos-y-horarios" "it" "gestione-presenze-e-turni") "pill" (dict "fr" "GTA" "en" "Time tracking" "es" "Tiempos" "it" "Presenze") "h3" (dict "fr" "Gestion des temps et plannings" "en" "Time and schedule management" "es" "Gestión de tiempos y horarios" "it" "Gestione presenze e turni") "desc" (dict "fr" "Pointage, planification multi-équipes, conformité conventions collectives." "en" "Clock-in, multi-team scheduling, compliance with collective agreements." "es" "Fichaje, planificación multi-equipo, cumplimiento de convenios colectivos." "it" "Pointing, pianificazione multi-team, conformità ai contratti collettivi.") "color" "c-cream")
+        (dict "slug" (dict "fr" "paie-et-administration-rh" "en" "payroll-and-hr-administration" "es" "nomina-y-administracion-rh" "it" "paghe-e-amministrazione-hr") "pill" (dict "fr" "Paie" "en" "Payroll" "es" "Nómina" "it" "Paghe") "h3" (dict "fr" "Paie et administration RH" "en" "Payroll and HR administration" "es" "Nómina y administración RRHH" "it" "Paghe e amministrazione HR") "desc" (dict "fr" "DSN, bulletins, intégrations, accompagnement, sécurité des données sensibles." "en" "DSN, payslips, integrations, support, sensitive data security." "es" "Cotizaciones, nóminas, integraciones, acompañamiento, seguridad de datos sensibles." "it" "Contributi, buste paga, integrazioni, supporto, sicurezza dei dati sensibili.") "color" "c-amber")
+        (dict "slug" (dict "fr" "gestion-des-talents-et-entretiens" "en" "talent-management-and-reviews" "es" "talento-y-evaluaciones" "it" "talenti-e-colloqui") "pill" (dict "fr" "Talents" "en" "Talents" "es" "Talento" "it" "Talenti") "h3" (dict "fr" "Gestion des talents et entretiens" "en" "Talent management and reviews" "es" "Gestión del talento y evaluaciones" "it" "Gestione talenti e colloqui") "desc" (dict "fr" "Entretiens annuels et pro, performance, GEPP, mobilité interne." "en" "Annual and career reviews, performance, workforce planning, internal mobility." "es" "Evaluaciones anuales y profesionales, desempeño, plan de carrera, movilidad interna." "it" "Colloqui annuali e di carriera, performance, sviluppo, mobilità interna.") "color" "c-blue")
+        (dict "slug" (dict "fr" "formation-et-competences" "en" "training-and-skills" "es" "formacion-y-competencias" "it" "formazione-e-competenze") "pill" (dict "fr" "Formation" "en" "Training" "es" "Formación" "it" "Formazione") "h3" (dict "fr" "Formation et compétences" "en" "Training and skills" "es" "Formación y competencias" "it" "Formazione e competenze") "desc" (dict "fr" "LMS, e-learning, blended learning, suivi des certifications obligatoires." "en" "LMS, e-learning, blended learning, mandatory certification tracking." "es" "LMS, e-learning, blended learning, seguimiento de certificaciones obligatorias." "it" "LMS, e-learning, blended learning, monitoraggio delle certificazioni obbligatorie.") "color" "c-mint")
+        (dict "slug" (dict "fr" "sirh-par-secteur" "en" "hris-by-industry" "es" "hris-por-sector" "it" "hr-per-settore") "pill" (dict "fr" "Secteur" "en" "Industry" "es" "Sector" "it" "Settore") "h3" (dict "fr" "SIRH par secteur" "en" "HRIS by industry" "es" "HRIS por sector" "it" "HR per settore") "desc" (dict "fr" "Retail, hôtellerie, santé, industrie : 4 stratégies SIRH adaptées à votre métier." "en" "Retail, hospitality, healthcare, manufacturing: 4 HRIS strategies tailored to your business." "es" "Retail, hostelería, salud, industria: 4 estrategias HRIS adaptadas a tu sector." "it" "Retail, hotellerie, sanità, industria: 4 strategie HR adatte al tuo settore.") "color" "c-peach")
+        (dict "slug" (dict "fr" "guides-et-tendances-rh" "en" "hr-guides-and-trends" "es" "guias-y-tendencias-hr" "it" "guide-e-tendenze-hr") "pill" (dict "fr" "Tendances" "en" "Trends" "es" "Tendencias" "it" "Tendenze") "h3" (dict "fr" "Guides et tendances RH" "en" "HR guides and trends" "es" "Guías y tendencias HR" "it" "Guide e tendenze HR") "desc" (dict "fr" "IA RH, expérience collaborateur, conformité, marché : analyses et prospective." "en" "AI in HR, employee experience, compliance, market: analyses and foresight." "es" "IA en RRHH, experiencia del empleado, cumplimiento, mercado: análisis y prospectiva." "it" "IA HR, employee experience, conformità, mercato: analisi e prospettive.") "color" "c-lavender")
     }}
 
     <div class="grid-categories">
-        {{ range $i, $cat := $cats }}
-        {{ $slug := cond $isEN $cat.slugEN $cat.slug }}
-        {{ $pill := cond $isEN $cat.pillEN $cat.pill }}
-        {{ $h3 := cond $isEN $cat.h3EN $cat.h3 }}
-        {{ $desc := cond $isEN $cat.descEN $cat.desc }}
-        <a href="{{ printf "/%scategories/%s/" (cond $isEN "en/" "") $slug | relURL }}" class="category-card {{ $cat.color }}">
+        {{ range $cat := $cats }}
+        <a href="{{ printf "%scategories/%s/" $base (index $cat.slug $lang) | relURL }}" class="category-card {{ $cat.color }}">
             <div>
-                <span class="pill">{{ $pill }}</span>
-                <h3>{{ $h3 }}</h3>
-                <p>{{ $desc }}</p>
+                <span class="pill">{{ index $cat.pill $lang }}</span>
+                <h3>{{ index $cat.h3 $lang }}</h3>
+                <p>{{ index $cat.desc $lang }}</p>
             </div>
             <span class="arrow" aria-hidden="true">→</span>
         </a>
@@ -86,11 +95,36 @@
 </section>
 
 <!-- ============ AVIS GOOGLE ============ -->
+{{ $revEyebrow := dict "fr" "Avis lecteurs" "en" "Reader reviews" "es" "Opiniones de lectores" "it" "Recensioni dei lettori" }}
+{{ $revTitle := dict "fr" "Ils utilisent nos comparatifs pour choisir" "en" "They use our comparisons to choose" "es" "Usan nuestras comparativas para elegir" "it" "Usano i nostri confronti per scegliere" }}
+{{ $revSub := dict "fr" "DRH, managers et consultants racontent comment nos analyses les ont aidés à présélectionner le SIRH adapté à leur contexte." "en" "HR leaders, managers and consultants share how our analyses helped them shortlist the right HRIS for their context." "es" "Directores de RRHH, managers y consultores cuentan cómo nuestros análisis les ayudaron a preseleccionar el HRIS adecuado." "it" "Direttori HR, manager e consulenti raccontano come le nostre analisi li hanno aiutati a preselezionare l'HR adatto." }}
+{{ $revBased := dict "fr" "sur 184 avis vérifiés" "en" "based on 184 verified reviews" "es" "basado en 184 opiniones verificadas" "it" "basato su 184 recensioni verificate" }}
+{{ $revVerified := dict "fr" "Avis vérifié" "en" "Verified review" "es" "Opinión verificada" "it" "Recensione verificata" }}
+{{ $weeksAgo := dict "fr" "il y a 3 semaines" "en" "3 weeks ago" "es" "hace 3 semanas" "it" "3 settimane fa" }}
+{{ $monthAgo := dict "fr" "il y a 1 mois" "en" "1 month ago" "es" "hace 1 mes" "it" "1 mese fa" }}
+{{ $months2Ago := dict "fr" "il y a 2 mois" "en" "2 months ago" "es" "hace 2 meses" "it" "2 mesi fa" }}
+{{ $months3Ago := dict "fr" "il y a 3 mois" "en" "3 months ago" "es" "hace 3 meses" "it" "3 mesi fa" }}
+{{ $months4Ago := dict "fr" "il y a 4 mois" "en" "4 months ago" "es" "hace 4 meses" "it" "4 mesi fa" }}
+
+{{/* Reviews avec texte traduit */}}
+{{ $rev1Role := dict "fr" "DRH, Hôtellerie (520 salariés)" "en" "HR Director, Hospitality (520 employees)" "es" "Directora RRHH, Hostelería (520 empleados)" "it" "Direttore HR, Hotellerie (520 dipendenti)" }}
+{{ $rev1Text := dict "fr" "Leur comparatif des logiciels de GTA nous a fait gagner des semaines de recherche. Méthodologie limpide, sans parti pris caché, vraiment centré sur les besoins de l'hôtellerie." "en" "Their time tracking software comparison saved us weeks of research. Crystal clear methodology, no hidden bias, real focus on hospitality-specific needs." "es" "Su comparativa de software de gestión de tiempos nos ahorró semanas de búsqueda. Metodología clara, sin sesgo oculto, centrada en las necesidades de la hostelería." "it" "Il loro confronto dei software di gestione presenze ci ha fatto risparmiare settimane di ricerca. Metodologia chiara, senza pregiudizi nascosti, focalizzata sulle esigenze dell'hotellerie." }}
+{{ $rev2Role := dict "fr" "HRBP, Groupe Retail (1 200 salariés)" "en" "HRBP, Retail Group (1,200 employees)" "es" "HRBP, Grupo Retail (1.200 empleados)" "it" "HRBP, Gruppo Retail (1.200 dipendenti)" }}
+{{ $rev2Text := dict "fr" "L'article sur le SIRH par secteur a mis le doigt sur exactement notre problème. On a enfin compris pourquoi une suite généraliste n'allait pas marcher pour notre réseau de magasins." "en" "The article on industry-specific HRIS hit the nail on the head. We finally understood why a generalist suite wasn't going to work for our store network." "es" "El artículo sobre HRIS por sector dio en el clavo. Por fin entendimos por qué una suite generalista no iba a funcionar para nuestra red de tiendas." "it" "L'articolo sull'HR per settore ha colto nel segno. Abbiamo finalmente capito perché una suite generalista non avrebbe funzionato per la nostra rete di negozi." }}
+{{ $rev3Role := dict "fr" "Talent Manager, SaaS (180 salariés)" "en" "Talent Manager, SaaS (180 employees)" "es" "Talent Manager, SaaS (180 empleados)" "it" "Talent Manager, SaaS (180 dipendenti)" }}
+{{ $rev3Text := dict "fr" "Très bon angle sur les logiciels d'entretien annuel. La distinction entre modules embarqués SIRH et plateformes talents dédiées est bien expliquée, avec exemples concrets." "en" "Excellent take on annual review software. The distinction between embedded HRIS modules and dedicated talent platforms is well explained, with real examples." "es" "Excelente enfoque sobre el software de evaluación anual. La distinción entre módulos integrados HRIS y plataformas dedicadas al talento está bien explicada, con ejemplos reales." "it" "Ottimo angolo sui software di colloquio annuale. La distinzione tra moduli HR integrati e piattaforme dedicate ai talenti è ben spiegata, con esempi concreti." }}
+{{ $rev4Role := dict "fr" "Consultant RH, ETI" "en" "HR consultant, mid-market" "es" "Consultor RRHH, mediana empresa" "it" "Consulente HR, media impresa" }}
+{{ $rev4Text := dict "fr" "J'envoie régulièrement des liens à mes clients. Le guide d'achat paie est une excellente base pour démarrer un appel d'offres. J'aimerais une grille de sélection téléchargeable." "en" "I regularly send links to my clients. The payroll buyer's guide is a great starting point for any RFP. I'd love a downloadable selection grid though." "es" "Envío regularmente enlaces a mis clientes. La guía de compra de nóminas es una excelente base para iniciar una licitación. Me encantaría una matriz de selección descargable." "it" "Invio regolarmente i link ai miei clienti. La guida d'acquisto paghe è un'ottima base per avviare una gara. Mi piacerebbe una griglia di selezione scaricabile." }}
+{{ $rev5Role := dict "fr" "DRH, Santé (340 salariés)" "en" "HR Director, Healthcare (340 employees)" "es" "Directora RRHH, Salud (340 empleados)" "it" "Direttore HR, Sanità (340 dipendenti)" }}
+{{ $rev5Text := dict "fr" "Le contenu indépendant est rare dans le marché du SIRH. J'apprécie qu'ils ne cachent pas les fourchettes de prix et qu'ils citent honnêtement les limites des éditeurs." "en" "Independent content is rare in the HRIS market. I appreciate that they don't hide pricing ranges and they call out vendor limitations honestly." "es" "El contenido independiente es raro en el mercado HRIS. Aprecio que no oculten los rangos de precios y citen honestamente las limitaciones de los proveedores." "it" "I contenuti indipendenti sono rari nel mercato HR. Apprezzo che non nascondano i prezzi e citino onestamente i limiti dei fornitori." }}
+{{ $rev6Role := dict "fr" "DAF, Industrie (650 salariés)" "en" "CFO, Manufacturing (650 employees)" "es" "Director financiero, Industria (650 empleados)" "it" "CFO, Industria (650 dipendenti)" }}
+{{ $rev6Text := dict "fr" "L'article tendances 2026 a été utile pour nos arbitrages budgétaires. Concret, bien sourcé, sans baratin marketing. À garder en favoris." "en" "The trends 2026 article was useful for our budget arbitrations. Concrete, well sourced, and free from marketing fluff. Bookmarked." "es" "El artículo sobre tendencias 2026 fue útil para nuestros arbitrajes presupuestarios. Concreto, bien documentado, sin paja de marketing. A favoritos." "it" "L'articolo sulle tendenze 2026 è stato utile per i nostri arbitraggi di budget. Concreto, ben documentato, senza fronzoli di marketing. Da salvare." }}
+
 <section class="reviews-section">
     <div class="section-head" style="max-width: 1280px; margin: 0 auto 2rem;">
-        <span class="section-eyebrow">{{ if $isEN }}Reader reviews{{ else }}Avis lecteurs{{ end }}</span>
-        <h2 class="section-title">{{ if $isEN }}They use our comparisons to choose{{ else }}Ils utilisent nos comparatifs pour choisir{{ end }}</h2>
-        <p class="section-subtitle">{{ if $isEN }}HR leaders, managers and consultants share how our analyses helped them shortlist the right HRIS for their context.{{ else }}DRH, managers et consultants racontent comment nos analyses les ont aidés à présélectionner le SIRH adapté à leur contexte.{{ end }}</p>
+        <span class="section-eyebrow">{{ index $revEyebrow $lang }}</span>
+        <h2 class="section-title">{{ index $revTitle $lang }}</h2>
+        <p class="section-subtitle">{{ index $revSub $lang }}</p>
     </div>
     <div class="reviews-meta">
         <span class="google-logo">
@@ -99,116 +133,62 @@
         </span>
         <div class="reviews-rating">
             <span class="rating-number">4,8</span>
-            <span class="stars" aria-label="4.8 sur 5">★★★★★</span>
+            <span class="stars" aria-label="4.8/5">★★★★★</span>
         </div>
-        <span class="reviews-count">{{ if $isEN }}based on 184 verified reviews{{ else }}sur 184 avis vérifiés{{ end }}</span>
+        <span class="reviews-count">{{ index $revBased $lang }}</span>
     </div>
 
     <div class="reviews-grid">
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar">CL</div>
-                <div>
-                    <div class="review-name">Claire Lemoine</div>
-                    <div class="review-role">{{ if $isEN }}HR Director, Hospitality (520 employees){{ else }}DRH, Hôtellerie (520 salariés){{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★★</span>
-                <span class="review-date">{{ if $isEN }}3 weeks ago{{ else }}il y a 3 semaines{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"Their comparison of time tracking software saved us weeks of research. Crystal clear methodology, no hidden bias, real focus on hospitality-specific needs."{{ else }}«&nbsp;Leur comparatif des logiciels de GTA nous a fait gagner des semaines de recherche. Méthodologie limpide, sans parti pris caché, vraiment centré sur les besoins de l'hôtellerie.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar">CL</div><div><div class="review-name">Claire Lemoine</div><div class="review-role">{{ index $rev1Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★★</span><span class="review-date">{{ index $weeksAgo $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev1Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
-
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar av-amber">MR</div>
-                <div>
-                    <div class="review-name">Marc Rouvier</div>
-                    <div class="review-role">{{ if $isEN }}HRBP, Retail Group (1 200 employees){{ else }}HRBP, Groupe Retail (1 200 salariés){{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★★</span>
-                <span class="review-date">{{ if $isEN }}1 month ago{{ else }}il y a 1 mois{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"The article on industry-specific HRIS hit the nail on the head. We finally understood why a generalist suite wasn't going to work for our store network."{{ else }}«&nbsp;L'article sur le SIRH par secteur a mis le doigt sur exactement notre problème. On a enfin compris pourquoi une suite généraliste n'allait pas marcher pour notre réseau de magasins.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar av-amber">MR</div><div><div class="review-name">Marc Rouvier</div><div class="review-role">{{ index $rev2Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★★</span><span class="review-date">{{ index $monthAgo $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev2Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
-
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar av-mint">SD</div>
-                <div>
-                    <div class="review-name">Sophie Delaunay</div>
-                    <div class="review-role">{{ if $isEN }}Talent Manager, SaaS (180 employees){{ else }}Talent Manager, SaaS (180 salariés){{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★★</span>
-                <span class="review-date">{{ if $isEN }}2 months ago{{ else }}il y a 2 mois{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"Excellent take on annual review software. The distinction between embedded HRIS modules and dedicated talent platforms is well explained, with real examples."{{ else }}«&nbsp;Très bon angle sur les logiciels d'entretien annuel. La distinction entre modules embarqués SIRH et plateformes talents dédiées est bien expliquée, avec exemples concrets.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar av-mint">SD</div><div><div class="review-name">Sophie Delaunay</div><div class="review-role">{{ index $rev3Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★★</span><span class="review-date">{{ index $months2Ago $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev3Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
-
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar av-violet">JT</div>
-                <div>
-                    <div class="review-name">Julien Tessier</div>
-                    <div class="review-role">{{ if $isEN }}HR consultant, mid-market{{ else }}Consultant RH, ETI{{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★☆</span>
-                <span class="review-date">{{ if $isEN }}2 months ago{{ else }}il y a 2 mois{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"I regularly send links to my clients. The payroll buyer's guide is a great starting point for any RFP. I'd love a downloadable selection grid though."{{ else }}«&nbsp;J'envoie régulièrement des liens à mes clients. Le guide d'achat paie est une excellente base pour démarrer un appel d'offres. J'aimerais une grille de sélection téléchargeable.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar av-violet">JT</div><div><div class="review-name">Julien Tessier</div><div class="review-role">{{ index $rev4Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★☆</span><span class="review-date">{{ index $months2Ago $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev4Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
-
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar av-rose">AB</div>
-                <div>
-                    <div class="review-name">Aurélie Bonnet</div>
-                    <div class="review-role">{{ if $isEN }}HR Director, Healthcare (340 employees){{ else }}DRH, Santé (340 salariés){{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★★</span>
-                <span class="review-date">{{ if $isEN }}3 months ago{{ else }}il y a 3 mois{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"Independent content is rare in the HRIS market. I appreciate that they don't hide pricing ranges and they call out vendor limitations honestly."{{ else }}«&nbsp;Le contenu indépendant est rare dans le marché du SIRH. J'apprécie qu'ils ne cachent pas les fourchettes de prix et qu'ils citent honnêtement les limites des éditeurs.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar av-rose">AB</div><div><div class="review-name">Aurélie Bonnet</div><div class="review-role">{{ index $rev5Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★★</span><span class="review-date">{{ index $months3Ago $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev5Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
-
         <article class="review-card">
-            <div class="review-head">
-                <div class="review-avatar av-slate">PG</div>
-                <div>
-                    <div class="review-name">Pierre Gauthier</div>
-                    <div class="review-role">{{ if $isEN }}CFO, Manufacturing (650 employees){{ else }}DAF, Industrie (650 salariés){{ end }}</div>
-                </div>
-            </div>
-            <div class="review-meta">
-                <span class="stars">★★★★★</span>
-                <span class="review-date">{{ if $isEN }}4 months ago{{ else }}il y a 4 mois{{ end }}</span>
-            </div>
-            <p class="review-text">{{ if $isEN }}"The trends 2026 article was useful for our budget arbitrations. Concrete, well sourced, and free from marketing fluff. Bookmarked."{{ else }}«&nbsp;L'article tendances 2026 a été utile pour nos arbitrages budgétaires. Concret, bien sourcé, sans baratin marketing. À garder en favoris.&nbsp;»{{ end }}</p>
-            <span class="review-verified">{{ if $isEN }}Verified review{{ else }}Avis vérifié{{ end }}</span>
+            <div class="review-head"><div class="review-avatar av-slate">PG</div><div><div class="review-name">Pierre Gauthier</div><div class="review-role">{{ index $rev6Role $lang }}</div></div></div>
+            <div class="review-meta"><span class="stars">★★★★★</span><span class="review-date">{{ index $months4Ago $lang }}</span></div>
+            <p class="review-text">&laquo;&nbsp;{{ index $rev6Text $lang }}&nbsp;&raquo;</p>
+            <span class="review-verified">{{ index $revVerified $lang }}</span>
         </article>
     </div>
 </section>
 
 <!-- ============ DERNIERS ARTICLES ============ -->
+{{ $latestEyebrow := dict "fr" "Dernières publications" "en" "Latest publications" "es" "Últimas publicaciones" "it" "Ultime pubblicazioni" }}
+{{ $latestTitle := dict "fr" "Analyses et guides récents" "en" "Fresh analyses and guides" "es" "Análisis y guías recientes" "it" "Analisi e guide recenti" }}
+{{ $latestSub := dict "fr" "Nos derniers comparatifs, guides d'achat et analyses sectorielles pour vous repérer dans le marché SIRH." "en" "Our latest comparisons, buyer's guides and industry insights to help you navigate the HRIS market." "es" "Nuestras últimas comparativas, guías de compra y análisis sectoriales para orientarte en el mercado HRIS." "it" "I nostri ultimi confronti, guide d'acquisto e analisi settoriali per orientarti nel mercato HR." }}
+{{ $readMore := dict "fr" "Lire la suite" "en" "Read more" "es" "Leer más" "it" "Leggi di più" }}
+
 <section class="latest-section">
     <div class="section-head" style="max-width: 1280px; margin: 0 auto 3rem;">
-        <span class="section-eyebrow">{{ if $isEN }}Latest publications{{ else }}Dernières publications{{ end }}</span>
-        <h2 class="section-title">{{ if $isEN }}Fresh analyses and guides{{ else }}Analyses et guides récents{{ end }}</h2>
-        <p class="section-subtitle">{{ if $isEN }}Our latest comparisons, buyer's guides and industry insights to help you navigate the HRIS market.{{ else }}Nos derniers comparatifs, guides d'achat et analyses sectorielles pour vous repérer dans le marché SIRH.{{ end }}</p>
+        <span class="section-eyebrow">{{ index $latestEyebrow $lang }}</span>
+        <h2 class="section-title">{{ index $latestTitle $lang }}</h2>
+        <p class="section-subtitle">{{ index $latestSub $lang }}</p>
     </div>
     <div class="grid-articles">
         {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
@@ -222,14 +202,12 @@
             </a>
             <div class="article-card-body">
                 <div class="article-meta">
-                    {{ with .Params.categories }}
-                    <span class="article-category">{{ index . 0 }}</span>
-                    {{ end }}
-                    <time>{{ if $isEN }}{{ .Date.Format "January 2, 2006" }}{{ else }}{{ .Date.Format "2 January 2006" }}{{ end }}</time>
+                    {{ with .Params.categories }}<span class="article-category">{{ index . 0 }}</span>{{ end }}
+                    <time>{{ .Date.Format (index $dateFmt $lang) }}</time>
                 </div>
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                 <p>{{ .Description }}</p>
-                <a href="{{ .RelPermalink }}" class="read-more">{{ if $isEN }}Read more{{ else }}Lire la suite{{ end }}</a>
+                <a href="{{ .RelPermalink }}" class="read-more">{{ index $readMore $lang }}</a>
             </div>
         </article>
         {{ end }}
@@ -237,11 +215,15 @@
 </section>
 
 <!-- ============ CTA FINAL ============ -->
+{{ $ctaH2 := dict "fr" "Faites le bon choix de SIRH, du premier coup." "en" "Make the right HRIS choice, the first time." "es" "Toma la decisión correcta de HRIS, a la primera." "it" "Fai la scelta giusta di HR, al primo colpo." }}
+{{ $ctaP := dict "fr" "Parcourez nos comparatifs indépendants et guides d'achat pour présélectionner les logiciels RH qui correspondent vraiment à votre activité." "en" "Browse our independent comparisons and buyer's guides to shortlist the HR software that truly fits your business." "es" "Explora nuestras comparativas independientes y guías de compra para preseleccionar el software RRHH que realmente encaja con tu negocio." "it" "Esplora i nostri confronti indipendenti e guide d'acquisto per preselezionare i software HR che si adattano davvero alla tua attività." }}
+{{ $ctaBtn := dict "fr" "Explorer tous les articles" "en" "Explore all articles" "es" "Explorar todos los artículos" "it" "Esplora tutti gli articoli" }}
+
 <section style="padding: 0 1.5rem;">
     <div class="cta-banner">
-        <h2>{{ if $isEN }}Make the right HRIS choice, the first time.{{ else }}Faites le bon choix de SIRH, du premier coup.{{ end }}</h2>
-        <p>{{ if $isEN }}Browse our independent comparisons and buyer's guides to shortlist the HR software that truly fits your business.{{ else }}Parcourez nos comparatifs indépendants et guides d'achat pour présélectionner les logiciels RH qui correspondent vraiment à votre activité.{{ end }}</p>
-        <a href="{{ "blog/" | relURL }}" class="btn-primary">{{ if $isEN }}Explore all articles{{ else }}Explorer tous les articles{{ end }}</a>
+        <h2>{{ index $ctaH2 $lang }}</h2>
+        <p>{{ index $ctaP $lang }}</p>
+        <a href="{{ printf "%sblog/" $base | relURL }}" class="btn-primary">{{ index $ctaBtn $lang }}</a>
     </div>
 </section>
 

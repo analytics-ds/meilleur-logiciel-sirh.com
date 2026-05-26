@@ -1,5 +1,49 @@
-{{ $isEN := eq .Site.Language.Lang "en" }}
-{{ $base := cond $isEN "/en/" "/" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $base := printf "/%s/" $lang }}
+{{ if eq $lang "fr" }}{{ $base = "/" }}{{ end }}
+
+{{ $catsLabel := dict "fr" "Catégories" "en" "Categories" "es" "Categorías" "it" "Categorie" }}
+{{ $homeLabel := dict "fr" "Accueil" "en" "Home" "es" "Inicio" "it" "Home" }}
+{{ $blogLabel := dict "fr" "Blog" "en" "Blog" "es" "Blog" "it" "Blog" }}
+{{ $sitemapLabel := dict "fr" "Plan du site" "en" "Sitemap" "es" "Mapa del sitio" "it" "Mappa del sito" }}
+{{ $sitemapPath := dict "fr" "plan-du-site" "en" "site-map" "es" "mapa-del-sitio" "it" "mappa-del-sito" }}
+{{ $rights := dict "fr" "Tous droits réservés." "en" "All rights reserved." "es" "Todos los derechos reservados." "it" "Tutti i diritti riservati." }}
+
+{{ $cats := slice }}
+{{ if eq $lang "fr" }}
+  {{ $cats = slice
+    (dict "slug" "gestion-des-temps-et-plannings" "name" "Gestion des temps")
+    (dict "slug" "paie-et-administration-rh" "name" "Paie & administration")
+    (dict "slug" "gestion-des-talents-et-entretiens" "name" "Talents & entretiens")
+    (dict "slug" "formation-et-competences" "name" "Formation & compétences")
+    (dict "slug" "sirh-par-secteur" "name" "SIRH par secteur")
+    (dict "slug" "guides-et-tendances-rh" "name" "Guides & tendances") }}
+{{ else if eq $lang "en" }}
+  {{ $cats = slice
+    (dict "slug" "time-and-schedule-management" "name" "Time & schedule")
+    (dict "slug" "payroll-and-hr-administration" "name" "Payroll & HR admin")
+    (dict "slug" "talent-management-and-reviews" "name" "Talent & reviews")
+    (dict "slug" "training-and-skills" "name" "Training & skills")
+    (dict "slug" "hris-by-industry" "name" "HRIS by industry")
+    (dict "slug" "hr-guides-and-trends" "name" "HR guides & trends") }}
+{{ else if eq $lang "es" }}
+  {{ $cats = slice
+    (dict "slug" "gestion-de-tiempos-y-horarios" "name" "Gestión de tiempos")
+    (dict "slug" "nomina-y-administracion-rh" "name" "Nómina & administración")
+    (dict "slug" "talento-y-evaluaciones" "name" "Talento & evaluaciones")
+    (dict "slug" "formacion-y-competencias" "name" "Formación & competencias")
+    (dict "slug" "hris-por-sector" "name" "HRIS por sector")
+    (dict "slug" "guias-y-tendencias-hr" "name" "Guías & tendencias") }}
+{{ else if eq $lang "it" }}
+  {{ $cats = slice
+    (dict "slug" "gestione-presenze-e-turni" "name" "Gestione presenze")
+    (dict "slug" "paghe-e-amministrazione-hr" "name" "Paghe & amministrazione")
+    (dict "slug" "talenti-e-colloqui" "name" "Talenti & colloqui")
+    (dict "slug" "formazione-e-competenze" "name" "Formazione & competenze")
+    (dict "slug" "hr-per-settore" "name" "HR per settore")
+    (dict "slug" "guide-e-tendenze-hr" "name" "Guide & tendenze") }}
+{{ end }}
+
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-grid">
@@ -8,22 +52,10 @@
                 <p>{{ .Site.Params.description }}</p>
             </div>
             <div class="footer-col">
-                <h4>{{ if $isEN }}Categories{{ else }}Catégories{{ end }}</h4>
+                <h4>{{ index $catsLabel $lang }}</h4>
                 <ul>
-                    {{ if $isEN }}
-                    <li><a href="{{ $base }}categories/time-and-schedule-management/">Time & schedule</a></li>
-                    <li><a href="{{ $base }}categories/payroll-and-hr-administration/">Payroll & HR admin</a></li>
-                    <li><a href="{{ $base }}categories/talent-management-and-reviews/">Talent & reviews</a></li>
-                    <li><a href="{{ $base }}categories/training-and-skills/">Training & skills</a></li>
-                    <li><a href="{{ $base }}categories/hris-by-industry/">HRIS by industry</a></li>
-                    <li><a href="{{ $base }}categories/hr-guides-and-trends/">HR guides & trends</a></li>
-                    {{ else }}
-                    <li><a href="{{ $base }}categories/gestion-des-temps-et-plannings/">Gestion des temps</a></li>
-                    <li><a href="{{ $base }}categories/paie-et-administration-rh/">Paie & administration</a></li>
-                    <li><a href="{{ $base }}categories/gestion-des-talents-et-entretiens/">Talents & entretiens</a></li>
-                    <li><a href="{{ $base }}categories/formation-et-competences/">Formation & compétences</a></li>
-                    <li><a href="{{ $base }}categories/sirh-par-secteur/">SIRH par secteur</a></li>
-                    <li><a href="{{ $base }}categories/guides-et-tendances-rh/">Guides & tendances</a></li>
+                    {{ range $cats }}
+                    <li><a href="{{ printf "%scategories/%s/" $base .slug }}">{{ .name }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -31,15 +63,15 @@
                 <h4>Navigation</h4>
                 <nav aria-label="Footer navigation">
                     <ul>
-                        <li><a href="{{ $base }}">{{ if $isEN }}Home{{ else }}Accueil{{ end }}</a></li>
-                        <li><a href="{{ $base }}blog/">{{ if $isEN }}Blog{{ else }}Blog{{ end }}</a></li>
-                        <li><a href="{{ $base }}{{ cond $isEN "site-map" "plan-du-site" }}/">{{ if $isEN }}Sitemap{{ else }}Plan du site{{ end }}</a></li>
+                        <li><a href="{{ $base }}">{{ index $homeLabel $lang }}</a></li>
+                        <li><a href="{{ $base }}blog/">{{ index $blogLabel $lang }}</a></li>
+                        <li><a href="{{ printf "%s%s/" $base (index $sitemapPath $lang) }}">{{ index $sitemapLabel $lang }}</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ if $isEN }}All rights reserved.{{ else }}Tous droits réservés.{{ end }}</p>
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ index $rights $lang }}</p>
         </div>
     </div>
 </footer>
