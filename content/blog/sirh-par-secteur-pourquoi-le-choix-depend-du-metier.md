@@ -7,7 +7,7 @@ description: "Retail, hôtellerie, santé, industrie : pourquoi le SIRH idéal v
 image: "/images/blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier.svg"
 imageAlt: "Illustration des 4 secteurs SIRH retail, hotellerie, sante, industrie"
 imageCredit: ""
-categories: ["SIRH par secteur"]
+categories: ["SIRH par secteur", "SIRH Retail", "SIRH Hotellerie et restauration", "SIRH Sante", "SIRH Industrie"]
 tags: ["SIRH", "retail", "hôtellerie", "santé", "industrie"]
 author: "mathilde-lefranc"
 faq:

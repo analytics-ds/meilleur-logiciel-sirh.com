@@ -7,7 +7,7 @@ description: "Retail, hospitality, healthcare, manufacturing: why the ideal HRIS
 image: "/images/blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier.svg"
 imageAlt: "Illustration of the 4 HRIS industries: retail, hospitality, healthcare, manufacturing"
 imageCredit: ""
-categories: ["HRIS by industry"]
+categories: ["HRIS by industry", "HRIS Retail", "HRIS Hospitality and restaurants", "HRIS Healthcare", "HRIS Manufacturing"]
 tags: ["HRIS", "retail", "hospitality", "healthcare", "manufacturing"]
 author: "mathilde-lefranc"
 faq:

@@ -1,4 +1,5 @@
 {{ $isEN := eq .Site.Language.Lang "en" }}
+{{ $base := cond $isEN "/en/" "/" }}
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-grid">
@@ -9,8 +10,20 @@
             <div class="footer-col">
                 <h4>{{ if $isEN }}Categories{{ else }}Catégories{{ end }}</h4>
                 <ul>
-                    {{ range .Site.Taxonomies.categories }}
-                    <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+                    {{ if $isEN }}
+                    <li><a href="{{ $base }}categories/time-and-schedule-management/">Time & schedule</a></li>
+                    <li><a href="{{ $base }}categories/payroll-and-hr-administration/">Payroll & HR admin</a></li>
+                    <li><a href="{{ $base }}categories/talent-management-and-reviews/">Talent & reviews</a></li>
+                    <li><a href="{{ $base }}categories/training-and-skills/">Training & skills</a></li>
+                    <li><a href="{{ $base }}categories/hris-by-industry/">HRIS by industry</a></li>
+                    <li><a href="{{ $base }}categories/hr-guides-and-trends/">HR guides & trends</a></li>
+                    {{ else }}
+                    <li><a href="{{ $base }}categories/gestion-des-temps-et-plannings/">Gestion des temps</a></li>
+                    <li><a href="{{ $base }}categories/paie-et-administration-rh/">Paie & administration</a></li>
+                    <li><a href="{{ $base }}categories/gestion-des-talents-et-entretiens/">Talents & entretiens</a></li>
+                    <li><a href="{{ $base }}categories/formation-et-competences/">Formation & compétences</a></li>
+                    <li><a href="{{ $base }}categories/sirh-par-secteur/">SIRH par secteur</a></li>
+                    <li><a href="{{ $base }}categories/guides-et-tendances-rh/">Guides & tendances</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -18,12 +31,9 @@
                 <h4>Navigation</h4>
                 <nav aria-label="Footer navigation">
                     <ul>
-                        {{ range .Site.Menus.main }}
-                        {{ if not .Parent }}
-                        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                        {{ end }}
-                        <li><a href="{{ if $isEN }}/en/site-map/{{ else }}/plan-du-site/{{ end }}">{{ if $isEN }}Sitemap{{ else }}Plan du site{{ end }}</a></li>
+                        <li><a href="{{ $base }}">{{ if $isEN }}Home{{ else }}Accueil{{ end }}</a></li>
+                        <li><a href="{{ $base }}blog/">{{ if $isEN }}Blog{{ else }}Blog{{ end }}</a></li>
+                        <li><a href="{{ $base }}{{ cond $isEN "site-map" "plan-du-site" }}/">{{ if $isEN }}Sitemap{{ else }}Plan du site{{ end }}</a></li>
                     </ul>
                 </nav>
             </div>
