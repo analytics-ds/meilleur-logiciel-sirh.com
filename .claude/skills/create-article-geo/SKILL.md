@@ -1,20 +1,24 @@
 # Skill : Creer un article
 
-Ce skill genere un article de blog optimise SEO et GEO (Generative Engine Optimization) selon le type choisi. **Chaque article est systematiquement genere dans les deux langues du site (langue principale + anglais)**, jamais uniquement dans une seule langue.
+Ce skill genere un article de blog optimise SEO et GEO (Generative Engine Optimization) selon le type choisi. **Chaque article est systematiquement genere dans les QUATRE langues du site (FR + EN + ES + IT)**, jamais uniquement dans une seule langue.
 
 ## Declenchement
 
 L'utilisateur tape `/create-article-geo` ou demande de creer/rediger un article.
 
-## Bilinguisme automatique (FR + EN)
+## Multilinguisme automatique (FR + EN + ES + IT)
 
-Tous les blogs generes par ce template sont bilingues (langue principale + anglais en sous-dossier `/en/`). Chaque article cree est donc systematiquement produit dans les deux langues, en parallele :
-- Version langue principale : `content/blog/[slug-fr].md`
-- Version anglaise : `content/en/blog/[slug-en].md`
+Ce blog est configure en 4 langues dans `hugo.toml` (`fr` a la racine, `en`, `es`, `it` en sous-dossiers). Chaque article cree est donc systematiquement produit dans les quatre langues, en parallele :
+- Version FR (principale) : `content/blog/[slug-fr].md`
+- Version EN : `content/en/blog/[slug-en].md`
+- Version ES : `content/es/blog/[slug-es].md`
+- Version IT : `content/it/blog/[slug-it].md`
 
-Les deux versions partagent un `translationKey` identique dans le frontmatter, ce qui permet a Hugo de generer automatiquement les liens hreflang et le language switcher.
+Les quatre versions partagent un `translationKey` identique dans le frontmatter, ce qui permet a Hugo de generer automatiquement les liens hreflang et le language switcher.
 
-Ne JAMAIS demander au consultant s'il veut la version anglaise. C'est systematique.
+Ne JAMAIS demander au consultant s'il veut les versions EN / ES / IT. C'est systematique : 4 langues a chaque article.
+
+**Note** : avant de rediger, toujours relire la liste des langues dans `hugo.toml` (`[languages]`). Si la config evolue (ajout/retrait d'une langue), s'aligner sur la config reelle plutot que sur cette liste.
 
 ## Etape 0 — Pull du repo (sync obligatoire)
 
@@ -53,7 +57,7 @@ Demander a l'utilisateur :
 - **Query fan-out (mot-cle SEO)** : le terme SEO sur lequel l'article se positionne dans Google. Il decoule du prompt mais s'en distingue : le prompt est conversationnel (cible LLMs), la query est lexicale (cible SERP). **La query fan-out sert de base au meta title (= balise HTML <title>, = frontmatter `title`) avec un ajout naturel court** (annee, qualificatif, angle, marque). Exemple : query "meilleure huile essentielle stress" -> title "Meilleure huile essentielle stress : top 5 et avis 2026". Si l'utilisateur ne fournit pas de query fan-out, la determiner a partir du prompt en choisissant un mot-cle avec du volume de recherche.
 - **Categorie** : dans quelle categorie du blog ? (proposer les categories existantes du site, definies dans hugo.toml ou visibles dans content/blog/). L'utilisateur DOIT choisir une categorie, ne pas passer cette etape.
 
-**Note multilingue** : le consultant fournit ces infos dans la langue principale du site. La query fan-out et le prompt seront automatiquement traduits en anglais par Claude au moment de la redaction de la version EN (avec recherche de mots-cles SEO pertinents en anglais, pas une simple traduction litterale).
+**Note multilingue** : le consultant fournit ces infos dans la langue principale du site (FR). La query fan-out et le prompt seront automatiquement adaptes en EN, ES et IT par Claude au moment de la redaction de chaque version (avec recherche des mots-cles SEO pertinents dans chaque langue, pas une simple traduction litterale).
 
 Si l'utilisateur ne fournit qu'un mot-cle sans prompt, l'aider a formuler le prompt GEO correspondant (transformer le mot-cle en question naturelle).
 
@@ -125,7 +129,7 @@ author: thomas-durand
 
 Hugo resoudra automatiquement les infos (nom, avatar, bio, role) depuis `data/authors.yaml` dans les templates (`seo-head.html` pour le JSON-LD, `single.html` pour le bloc auteur en bas d'article).
 
-**Meme auteur pour FR et EN** : les deux versions d'un article (FR + EN) utilisent le meme `author: [id]`. Les libelles (jobTitle, role, bio) sont automatiquement traduits via les champs bilingues de `data/authors.yaml`.
+**Meme auteur pour les 4 langues** : les quatre versions d'un article (FR + EN + ES + IT) utilisent le meme `author: [id]`. Les libelles (jobTitle, role, bio) sont automatiquement traduits via les champs multilingues de `data/authors.yaml`.
 
 ## Etape 1.5 — Recuperation automatique de l'image hero
 
@@ -186,7 +190,7 @@ Afficher au consultant le chemin de l'image telechargee et proposer de la visual
 
 ### Analyse du site
 
-Lister tous les articles existants dans `content/blog/` en lisant le sitemap (`content/plan-du-site.md` ou directement les fichiers dans `content/blog/`). Pour chaque article existant, noter :
+Lister tous les articles existants par langue (`content/blog/` FR, `content/en/blog/` EN, `content/es/blog/` ES, `content/it/blog/` IT) en lisant le sitemap (`content/plan-du-site.md` ou directement les fichiers). Pour le maillage de chaque version, n'utiliser que les articles de la MEME langue. Pour chaque article existant, noter :
 - Le titre
 - Le mot-cle principal (visible dans le title et le nom du fichier)
 - La categorie
@@ -207,7 +211,7 @@ Identifier **au minimum 3 articles existants** thematiquement proches du nouvel 
 - L'**ancre du lien** (le texte cliquable) doit contenir le **mot-cle principal de l'article cible**, pas de "cliquez ici" ou "lire aussi"
 - Les liens doivent etre **naturels et contextuels** : inseres dans une phrase qui a du sens, pas en liste en bas de page
 - Repartir les liens dans differentes sections de l'article (pas tous au meme endroit)
-- **Maillage intra-langue uniquement** : un article FR ne mail QUE vers des articles FR (`/blog/...`), un article EN ne mail QUE vers des articles EN (`/en/blog/...`). Jamais de maillage cross-langue dans le corps de l'article. Le language switcher du header gere le lien vers la traduction
+- **Maillage intra-langue uniquement** : chaque version ne mail QUE vers des articles de la meme langue (FR : `/blog/...`, EN : `/en/blog/...`, ES : `/es/blog/...`, IT : `/it/blog/...`). Jamais de maillage cross-langue dans le corps de l'article. Le language switcher du header gere le lien vers les traductions
 
 Exemple :
 - Si l'article cible s'appelle "Les bienfaits du the vert", l'ancre doit etre quelque chose comme : "Comme nous l'avons vu dans notre article sur les **[bienfaits du the vert](/blog/bienfaits-the-vert/)**, ..."
@@ -215,41 +219,53 @@ Exemple :
 
 Si le site a moins de 3 articles, faire le maximum avec ce qui existe. Si le site est vide (premier article), noter dans un commentaire les futurs liens a ajouter quand d'autres articles seront publies.
 
-## Etape 3 — Redaction bilingue (FR + EN)
+## Etape 3 — Redaction multilingue (FR + EN + ES + IT)
 
 Lire le template correspondant dans `.claude/templates/articles/[type-choisi].md` et l'utiliser comme squelette **pour chaque langue**.
 
-### Production en deux passes
+### Production en quatre passes
 
-1. **Passe 1 — Langue principale (ex: FR)** :
-   - Rediger l'article complet dans la langue principale selon les regles ci-dessous
+1. **Passe 1 — FR (langue principale)** :
+   - Rediger l'article complet en francais selon les regles ci-dessous
    - Fichier : `content/blog/[slug-fr].md`
-2. **Passe 2 — Anglais** :
-   - Traduire l'article en anglais avec un vocabulaire SEO approprie (pas une traduction litterale, mais une adaptation SEO : rechercher les mots-cles anglais pertinents pour le sujet)
-   - Adapter les exemples culturels si necessaire (ex: marques locales, references culturelles)
-   - Rediger la version EN dans le template, avec **le meme `translationKey`** que la version FR pour lier les deux
+2. **Passe 2 — EN** :
+   - Adapter l'article en anglais avec un vocabulaire SEO approprie (pas une traduction litterale : rechercher les mots-cles anglais pertinents pour le sujet)
+   - Adapter les exemples culturels si necessaire (marques locales, references)
+   - Meme `translationKey` que la version FR
    - Fichier : `content/en/blog/[slug-en].md`
+3. **Passe 3 — ES** :
+   - Adapter l'article en espagnol (adaptation SEO, pas trad litterale : mots-cles espagnols pertinents)
+   - Adapter les exemples au marche ES si pertinent
+   - Meme `translationKey`
+   - Fichier : `content/es/blog/[slug-es].md`
+4. **Passe 4 — IT** :
+   - Adapter l'article en italien (adaptation SEO, pas trad litterale : mots-cles italiens pertinents)
+   - Adapter les exemples au marche IT si pertinent
+   - Meme `translationKey`
+   - Fichier : `content/it/blog/[slug-it].md`
+
+Les quatre versions partagent le **meme `translationKey`**, ce qui lie les traductions (hreflang + language switcher automatiques).
 
 ### Frontmatter
 
-Les deux versions ont le meme schema de frontmatter, avec le champ `translationKey` identique.
+Les quatre versions ont le meme schema de frontmatter, avec le champ `translationKey` identique.
 
 | Champ | Regle |
 |-------|-------|
-| `translationKey` | **OBLIGATOIRE**. Identique entre FR et EN. Format : slug-article-generique (ex: `bienfaits-the-vert`). Ce champ permet a Hugo de lier les 2 versions et de generer le hreflang et le language switcher |
+| `translationKey` | **OBLIGATOIRE**. Identique entre les 4 langues (FR/EN/ES/IT). Format : slug-article-generique (ex: `bienfaits-the-vert`). Ce champ permet a Hugo de lier les 4 versions et de generer le hreflang et le language switcher |
 | `title` | **= meta title HTML (balise <title>) = query fan-out + ajout naturel** dans la langue de l'article (annee, qualificatif, angle, marque). Cible la SERP classique. Max ~60 caracteres / 580px (cf skill `/tech-title`). Exemple : "Meilleure huile essentielle stress : top 5 et avis 2026" |
 | `h1` | **= H1 affiche dans la page = prompt GEO cible reformule naturellement si besoin** dans la langue de l'article (FR : question naturelle en francais, EN : question naturelle en anglais). Garder le prompt tel quel s'il est deja une question bien formee, le reformuler en question naturelle s'il est maladroit. Le layout Hugo doit afficher `h1` en titre principal de l'article (et fallback sur `title` si `h1` non renseigne) |
 | `description` | Meta description optimisee pour la SERP dans la langue de l'article. Max 140 caracteres, contient la query fan-out de la langue |
-| `date` | Date du jour (YYYY-MM-DD). Identique entre FR et EN |
+| `date` | Date du jour (YYYY-MM-DD). Identique entre les 4 langues |
 | `lastmod` | Date du jour (YYYY-MM-DD), identique a `date` a la creation |
-| `categories` | La categorie choisie, **dans la langue de l'article** (FR : "Thes verts", EN : "Green teas"). Le mapping FR↔EN est documente dans le CLAUDE.md du site |
-| `tags` | 3-6 tags pertinents, **dans la langue de l'article** (traduits en EN) |
-| `author` | **ID-slug de l'auteur** (ex: `thomas-durand`), cle de `data/authors.yaml`. Selectionne automatiquement a l'etape 1.3 selon la pertinence thematique. Meme ID pour les 2 versions FR et EN (les libelles jobTitle/role/bio sont automatiquement bilingues via le YAML) |
-| `image` | Chemin vers l'image hero (OBLIGATOIRE, rempli automatiquement a l'etape 1.5 par `fetch-image.sh`). **Meme image pour FR et EN** (on ne double pas le telechargement) |
-| `imageAlt` | Texte alt de l'image (OBLIGATOIRE). **Traduit dans la langue de l'article** (FR : en francais, EN : en anglais). Max 125 caracteres |
-| `imageCredit` | Credit photo (OBLIGATOIRE, rempli automatiquement). Meme credit dans les 2 langues |
+| `categories` | La categorie choisie, **dans la langue de l'article** (FR : "Paie et administration RH", EN : "Payroll and HR administration", ES / IT : equivalent local). Le mapping des categories par langue est documente dans le CLAUDE.md du site et dans les menus de `hugo.toml` |
+| `tags` | 3-6 tags pertinents, **dans la langue de l'article** (traduits en EN / ES / IT) |
+| `author` | **ID-slug de l'auteur** (ex: `thomas-durand`), cle de `data/authors.yaml`. Selectionne automatiquement a l'etape 1.3 selon la pertinence thematique. Meme ID pour les 4 versions (les libelles jobTitle/role/bio sont multilingues via le YAML) |
+| `image` | Chemin vers l'image hero (OBLIGATOIRE, rempli automatiquement a l'etape 1.5 par `fetch-image.sh`). **Meme image pour les 4 langues** (on ne multiplie pas le telechargement) |
+| `imageAlt` | Texte alt de l'image (OBLIGATOIRE). **Traduit dans la langue de l'article** (FR/EN/ES/IT). Max 125 caracteres |
+| `imageCredit` | Credit photo (OBLIGATOIRE, rempli automatiquement). Meme credit dans les 4 langues |
 | `faq` | Liste de questions/reponses pour le schema FAQPage JSON-LD (min. 3). **Traduites dans la langue de l'article**. Les questions doivent correspondre a celles de la section FAQ dans le body |
-| Nom du fichier | Slug = query fan-out en minuscules, tirets, sans accents, **dans la langue de l'article** (FR : `bienfaits-the-vert.md`, EN : `green-tea-benefits.md`) |
+| Nom du fichier | Slug = query fan-out en minuscules, tirets, sans accents, **dans la langue de l'article** (FR : `bienfaits-the-vert.md`, EN : `green-tea-benefits.md`, ES : `beneficios-te-verde.md`, IT : `benefici-te-verde.md`) |
 
 ### Regles GEO (Generative Engine Optimization)
 
@@ -290,10 +306,10 @@ Lire les commentaires HTML `<!-- NOTES POUR CLAUDE -->` en bas du template chois
 
 **Toujours suivre ces notes.** Elles priment sur les regles communes si conflit.
 
-## Etape 4 — Verification (checklist) — a appliquer aux DEUX versions FR + EN
+## Etape 4 — Verification (checklist) — a appliquer aux QUATRE versions FR + EN + ES + IT
 
-- [ ] Les 2 versions sont creees (FR dans `content/blog/`, EN dans `content/en/blog/`)
-- [ ] Les 2 versions partagent le meme `translationKey` dans le frontmatter
+- [ ] Les 4 versions sont creees (FR `content/blog/`, EN `content/en/blog/`, ES `content/es/blog/`, IT `content/it/blog/`)
+- [ ] Les 4 versions partagent le meme `translationKey` dans le frontmatter
 - [ ] Slug = query fan-out en minuscules, tirets, sans accents, dans la langue de l'article
 - [ ] Frontmatter `title` (= meta title HTML) = query fan-out + ajout naturel court, < 60 caracteres / 580px
 - [ ] Frontmatter `h1` (= H1 affiche) = prompt GEO cible reformule naturellement si besoin (question naturelle dans la langue de l'article)
@@ -330,12 +346,12 @@ hugo
 
 Afficher a l'utilisateur :
 - Type d'article utilise
-- Prompt GEO (H1) dans les 2 langues
-- Query fan-out (mot-cle SEO) dans les 2 langues
+- Prompt GEO (H1) dans les 4 langues
+- Query fan-out (mot-cle SEO) dans les 4 langues
 - Nombre de mots par langue
-- Nombre de H2 (identique dans les 2 langues)
+- Nombre de H2 (identique dans les 4 langues)
 - Liens internes ajoutes (en preciser la langue)
-- URLs des 2 versions (FR : `/blog/slug-fr/`, EN : `/en/blog/slug-en/`)
+- URLs des 4 versions (FR : `/blog/slug-fr/`, EN : `/en/blog/slug-en/`, ES : `/es/blog/slug-es/`, IT : `/it/blog/slug-it/`)
 - Proposer de voir le resultat en local (`hugo server`)
 
 ## Etape 6 — Enregistrement dans MEMORY.md
@@ -348,18 +364,18 @@ Format du fichier :
 # Journal de publication
 
 ## Semaine 16 (13/04/2026 - 19/04/2026)
-- 2026-04-17 | Titre de l'article (FR+EN) | Categorie
+- 2026-04-17 | Titre de l'article (FR+EN+ES+IT) | Categorie
 
 ## Semaine 15 (06/04/2026 - 12/04/2026)
-- 2026-04-07 | Titre de l'article (FR+EN) | Categorie
+- 2026-04-07 | Titre de l'article (FR+EN+ES+IT) | Categorie
 ```
 
 Regles :
 - Utiliser le numero de semaine ISO et les dates lundi-dimanche
 - Creer une nouvelle section de semaine si elle n'existe pas encore
 - Les semaines les plus recentes en haut du fichier
-- Une ligne par article : date | titre (FR+EN) | categorie
-- **1 article = 1 ligne, meme si 2 versions linguistiques** (les 2 versions comptent comme 1 article pour le quota de 4/semaine)
+- Une ligne par article : date | titre (FR+EN+ES+IT) | categorie
+- **1 article = 1 ligne, meme si 4 versions linguistiques** (les 4 versions comptent comme 1 article pour le quota de 4/semaine)
 
 ## Etape 7 — Push sur GitHub (direct sur main)
 
