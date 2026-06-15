@@ -42,6 +42,16 @@ Chaque article est publié dans les 4 langues avec un translationKey commun. La 
 - Plateforme LMS : comment choisir sa solution de formation : https://meilleur-logiciel-sirh.com/blog/plateforme-lms-choisir-solution-formation/
 - SIRH par secteur : pourquoi le choix dépend de votre métier : https://meilleur-logiciel-sirh.com/blog/sirh-par-secteur-pourquoi-le-choix-depend-du-metier/
 - Tendances RH 2026 : ce qui change dans les logiciels SIRH : https://meilleur-logiciel-sirh.com/blog/tendances-rh-2026-ce-qui-change-logiciels-sirh/
+- Convention collective métallurgie : temps et plannings RH : https://meilleur-logiciel-sirh.com/blog/convention-collective-metallurgie/
+- Convention collective restauration rapide : plannings et horaires : https://meilleur-logiciel-sirh.com/blog/convention-collective-restauration-rapide/
+- Convention collective restauration : temps de travail : https://meilleur-logiciel-sirh.com/blog/convention-collective-restauration/
+- Convention collective coiffure : temps de travail : https://meilleur-logiciel-sirh.com/blog/convention-collective-coiffure/
+- Convention collective bâtiment : temps de travail et chantiers : https://meilleur-logiciel-sirh.com/blog/convention-collective-batiment/
+- Convention collective grande distribution : temps de travail : https://meilleur-logiciel-sirh.com/blog/convention-collective-grande-distribution/
+- Convention collective transport routier : temps de service : https://meilleur-logiciel-sirh.com/blog/convention-collective-transport-routier/
+- Convention collective du sport : temps de travail et plannings : https://meilleur-logiciel-sirh.com/blog/convention-collective-sport/
+- Convention collective pharmacie : temps de travail en officine : https://meilleur-logiciel-sirh.com/blog/convention-collective-pharmacie/
+- Convention collective propreté : temps de travail et plannings : https://meilleur-logiciel-sirh.com/blog/convention-collective-proprete/
 
 ## Articles de référence (EN)
 
@@ -51,6 +61,16 @@ Chaque article est publié dans les 4 langues avec un translationKey commun. La 
 - LMS platform: how to choose your training solution : https://meilleur-logiciel-sirh.com/en/blog/lms-platform-how-to-choose/
 - HRIS by industry: why the choice depends on your business : https://meilleur-logiciel-sirh.com/en/blog/hris-by-industry-why-the-choice-depends-on-your-business/
 - HR trends 2026: what changes in HRIS software : https://meilleur-logiciel-sirh.com/en/blog/hr-trends-2026-what-changes-in-hris-software/
+- Metallurgy collective agreement: working time and scheduling : https://meilleur-logiciel-sirh.com/en/blog/metallurgy-collective-agreement/
+- Fast food collective agreement: schedules and working hours : https://meilleur-logiciel-sirh.com/en/blog/fast-food-collective-agreement/
+- Restaurant collective agreement: working hours and shifts : https://meilleur-logiciel-sirh.com/en/blog/restaurant-collective-agreement/
+- Hairdressing collective agreement: working time management : https://meilleur-logiciel-sirh.com/en/blog/hairdressing-collective-agreement/
+- Construction collective agreement: working time and site management : https://meilleur-logiciel-sirh.com/en/blog/construction-collective-agreement/
+- Retail collective agreement: working time in food distribution : https://meilleur-logiciel-sirh.com/en/blog/retail-collective-agreement/
+- Road transport collective agreement: service time management : https://meilleur-logiciel-sirh.com/en/blog/road-transport-collective-agreement/
+- Sport collective agreement: working time and schedule management : https://meilleur-logiciel-sirh.com/en/blog/sport-collective-agreement/
+- Pharmacy collective agreement: working time in French pharmacies : https://meilleur-logiciel-sirh.com/en/blog/pharmacy-collective-agreement/
+- Cleaning collective agreement France: working time and site scheduling : https://meilleur-logiciel-sirh.com/en/blog/cleaning-collective-agreement/
 
 ## Articles de référence (ES)
 
@@ -60,6 +80,16 @@ Chaque article est publié dans les 4 langues avec un translationKey commun. La 
 - Plataforma LMS: cómo elegir tu solución de formación : https://meilleur-logiciel-sirh.com/es/blog/plataforma-lms-elegir-solucion-formacion/
 - HRIS por sector: por qué la elección depende de tu sector : https://meilleur-logiciel-sirh.com/es/blog/hris-por-sector-por-que-la-eleccion-depende-de-tu-sector/
 - Tendencias HR 2026: lo que cambia en el software HRIS : https://meilleur-logiciel-sirh.com/es/blog/tendencias-hr-2026-que-cambia-en-software-hris/
+- Convenio colectivo de metalurgia: tiempos y planificación RRHH : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-metalurgia/
+- Convenio colectivo comida rápida: horarios y planificación : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-comida-rapida/
+- Convenio colectivo restauración: jornada de trabajo : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-restauracion/
+- Convenio colectivo peluquería: jornada y planificación : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-peluqueria/
+- Convenio colectivo construcción: jornada laboral y planificación de obra : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-construccion/
+- Convenio colectivo gran distribución: jornada y planificación de turnos : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-gran-distribucion/
+- Convenio colectivo de transporte por carretera: tiempo de servicio : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-transporte/
+- Convenio colectivo del deporte: jornada laboral y planificación : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-deporte/
+- Convenio colectivo farmacia: jornada y turnos en oficinas de farmacia : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-farmacia/
+- Convenio colectivo de limpieza: jornada y planificación de horarios : https://meilleur-logiciel-sirh.com/es/blog/convenio-colectivo-limpieza/
 
 ## Articles de référence (IT)
 
@@ -69,6 +99,16 @@ Chaque article est publié dans les 4 langues avec un translationKey commun. La 
 - Piattaforma LMS: come scegliere la soluzione di formazione : https://meilleur-logiciel-sirh.com/it/blog/piattaforma-lms-scegliere-soluzione-formazione/
 - HR per settore: perché la scelta dipende dal tuo settore : https://meilleur-logiciel-sirh.com/it/blog/hr-per-settore-perche-la-scelta-dipende-dal-settore/
 - Tendenze HR 2026: cosa cambia nei software HR : https://meilleur-logiciel-sirh.com/it/blog/tendenze-hr-2026-cosa-cambia-software-hr/
+- CCNL metalmeccanici: orari di lavoro e pianificazione HR : https://meilleur-logiciel-sirh.com/it/blog/ccnl-metalmeccanici/
+- CCNL fast food: turni, orari e pianificazione del lavoro : https://meilleur-logiciel-sirh.com/it/blog/ccnl-fast-food/
+- CCNL ristorazione: orario di lavoro e turni : https://meilleur-logiciel-sirh.com/it/blog/ccnl-ristorazione/
+- CCNL acconciatura: orario di lavoro e turni : https://meilleur-logiciel-sirh.com/it/blog/ccnl-acconciatura/
+- CCNL edilizia: orario di lavoro e gestione dei cantieri : https://meilleur-logiciel-sirh.com/it/blog/ccnl-edilizia/
+- CCNL grande distribuzione: orario di lavoro e turni : https://meilleur-logiciel-sirh.com/it/blog/ccnl-grande-distribuzione/
+- CCNL trasporti su strada: tempo di servizio e pianificazione : https://meilleur-logiciel-sirh.com/it/blog/ccnl-trasporti/
+- CCNL sport: orario di lavoro e gestione dei turni : https://meilleur-logiciel-sirh.com/it/blog/ccnl-sport/
+- CCNL farmacia: orario di lavoro e turni nelle farmacie private : https://meilleur-logiciel-sirh.com/it/blog/ccnl-farmacia/
+- CCNL pulizie in Francia: orario di lavoro e turni : https://meilleur-logiciel-sirh.com/it/blog/ccnl-pulizie/
 
 ## Pages clés
 
