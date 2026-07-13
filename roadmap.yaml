@@ -1,0 +1,222 @@
+# Roadmap editoriale evergreen — skill /create-article-auto
+# Blog PBN GEO datashake : meilleur-logiciel-sirh.com (mutualise Skello + Empowill)
+# Mots-cles issus des roadmaps SEO Skello et Empowill, adaptes a un blog comparatif SIRH.
+# Champs humains : kw, category, scheduled_date, status. Le reste est rempli par l'agent.
+
+articles:
+  - kw: "logiciel sirh"
+    category: "Guides et tendances RH"
+    volume: 2400
+    scheduled_date: "2026-07-14"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "quel sirh choisir"
+    category: "Guides et tendances RH"
+    volume: 90
+    scheduled_date: "2026-07-17"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "aide au choix sirh"
+    category: "Guides et tendances RH"
+    volume: 140
+    scheduled_date: "2026-07-21"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "prix logiciel sirh"
+    category: "Guides et tendances RH"
+    volume: 70
+    scheduled_date: "2026-07-24"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel sirh pme"
+    category: "Guides et tendances RH"
+    volume: 90
+    scheduled_date: "2026-07-28"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gestion planning"
+    category: "Gestion des temps et plannings"
+    volume: 480
+    scheduled_date: "2026-07-31"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gestion conges"
+    category: "Gestion des temps et plannings"
+    volume: 480
+    scheduled_date: "2026-08-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des absences"
+    category: "Gestion des temps et plannings"
+    volume: 140
+    scheduled_date: "2026-08-07"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "pointeuse mobile"
+    category: "Gestion des temps et plannings"
+    volume: 320
+    scheduled_date: "2026-08-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "gestion de personnel logiciel"
+    category: "Gestion des temps et plannings"
+    volume: 320
+    scheduled_date: "2026-08-14"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "dpae"
+    category: "Paie et administration RH"
+    volume: 135000
+    scheduled_date: "2026-08-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des talents"
+    category: "Gestion des talents et entretiens"
+    volume: 90
+    scheduled_date: "2026-08-21"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des entretiens"
+    category: "Gestion des talents et entretiens"
+    volume: 30
+    scheduled_date: "2026-08-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "entretien annuel"
+    category: "Gestion des talents et entretiens"
+    volume: 4400
+    scheduled_date: "2026-08-28"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "entretien professionnel"
+    category: "Gestion des talents et entretiens"
+    volume: 8100
+    scheduled_date: "2026-09-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion de la formation"
+    category: "Formation et competences"
+    volume: 480
+    scheduled_date: "2026-09-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "plan de formation"
+    category: "Formation et competences"
+    volume: 2400
+    scheduled_date: "2026-09-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "gestion des competences"
+    category: "Formation et competences"
+    volume: 390
+    scheduled_date: "2026-09-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gpec"
+    category: "Formation et competences"
+    volume: 320
+    scheduled_date: "2026-09-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "digitalisation rh"
+    category: "Guides et tendances RH"
+    volume: 880
+    scheduled_date: "2026-09-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "ia rh"
+    category: "Guides et tendances RH"
+    volume: 390
+    scheduled_date: "2026-09-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "people analytics"
+    category: "Guides et tendances RH"
+    volume: 260
+    scheduled_date: "2026-09-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel rh pour industrie"
+    category: "SIRH par secteur"
+    volume: 30
+    scheduled_date: "2026-09-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "convention collective restauration rapide"
+    category: "SIRH par secteur"
+    volume: 2900
+    scheduled_date: "2026-10-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
