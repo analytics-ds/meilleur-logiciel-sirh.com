@@ -1,6 +1,6 @@
 # Roadmap editoriale evergreen — skill /create-article-auto
-# Blog PBN GEO datashake : meilleur-logiciel-sirh.com (mutualise Skello + Empowill)
-# Mots-cles issus des roadmaps SEO Skello et Empowill, adaptes a un blog comparatif SIRH.
+# Blog PBN GEO datashake : meilleur-logiciel-sirh.com (comparatif SIRH, mutualise Skello + Empowill)
+# 40 mots-cles issus des roadmaps SEO Skello + Empowill, adaptes a un blog comparatif SIRH.
 # Champs humains : kw, category, scheduled_date, status. Le reste est rempli par l'agent.
 
 articles:
@@ -49,127 +49,10 @@ articles:
     published_url_fr: null
     published_url_en: null
     error: null
-  - kw: "logiciel gestion planning"
-    category: "Gestion des temps et plannings"
-    volume: 480
+  - kw: "meilleur logiciel sirh"
+    category: "Guides et tendances RH"
+    volume: 50
     scheduled_date: "2026-07-31"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel gestion conges"
-    category: "Gestion des temps et plannings"
-    volume: 480
-    scheduled_date: "2026-08-04"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel de gestion des absences"
-    category: "Gestion des temps et plannings"
-    volume: 140
-    scheduled_date: "2026-08-07"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "pointeuse mobile"
-    category: "Gestion des temps et plannings"
-    volume: 320
-    scheduled_date: "2026-08-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "gestion de personnel logiciel"
-    category: "Gestion des temps et plannings"
-    volume: 320
-    scheduled_date: "2026-08-14"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "dpae"
-    category: "Paie et administration RH"
-    volume: 135000
-    scheduled_date: "2026-08-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel de gestion des talents"
-    category: "Gestion des talents et entretiens"
-    volume: 90
-    scheduled_date: "2026-08-21"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel de gestion des entretiens"
-    category: "Gestion des talents et entretiens"
-    volume: 30
-    scheduled_date: "2026-08-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "entretien annuel"
-    category: "Gestion des talents et entretiens"
-    volume: 4400
-    scheduled_date: "2026-08-28"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "entretien professionnel"
-    category: "Gestion des talents et entretiens"
-    volume: 8100
-    scheduled_date: "2026-09-01"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel de gestion de la formation"
-    category: "Formation et competences"
-    volume: 480
-    scheduled_date: "2026-09-04"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "plan de formation"
-    category: "Formation et competences"
-    volume: 2400
-    scheduled_date: "2026-09-08"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "gestion des competences"
-    category: "Formation et competences"
-    volume: 390
-    scheduled_date: "2026-09-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
-    error: null
-  - kw: "logiciel gpec"
-    category: "Formation et competences"
-    volume: 320
-    scheduled_date: "2026-09-15"
     status: todo
     published_date: null
     published_url_fr: null
@@ -178,7 +61,7 @@ articles:
   - kw: "digitalisation rh"
     category: "Guides et tendances RH"
     volume: 880
-    scheduled_date: "2026-09-18"
+    scheduled_date: "2026-08-04"
     status: todo
     published_date: null
     published_url_fr: null
@@ -187,16 +70,268 @@ articles:
   - kw: "ia rh"
     category: "Guides et tendances RH"
     volume: 390
+    scheduled_date: "2026-08-07"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "reporting rh"
+    category: "Guides et tendances RH"
+    volume: 390
+    scheduled_date: "2026-08-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gestion planning"
+    category: "Gestion des temps et plannings"
+    volume: 480
+    scheduled_date: "2026-08-14"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gestion conges"
+    category: "Gestion des temps et plannings"
+    volume: 480
+    scheduled_date: "2026-08-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des absences"
+    category: "Gestion des temps et plannings"
+    volume: 140
+    scheduled_date: "2026-08-21"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "pointeuse mobile"
+    category: "Gestion des temps et plannings"
+    volume: 320
+    scheduled_date: "2026-08-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "gestion de personnel logiciel"
+    category: "Gestion des temps et plannings"
+    volume: 320
+    scheduled_date: "2026-08-28"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "dpae"
+    category: "Paie et administration RH"
+    volume: 135000
+    scheduled_date: "2026-09-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "transparence des salaires"
+    category: "Paie et administration RH"
+    volume: 28800
+    scheduled_date: "2026-09-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "grille salaire"
+    category: "Paie et administration RH"
+    volume: 1600
+    scheduled_date: "2026-09-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "plan de remuneration"
+    category: "Paie et administration RH"
+    volume: 330
+    scheduled_date: "2026-09-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "revalorisation salariale"
+    category: "Paie et administration RH"
+    volume: 390
+    scheduled_date: "2026-09-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "duerp"
+    category: "Paie et administration RH"
+    volume: 27100
+    scheduled_date: "2026-09-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "entretien professionnel"
+    category: "Gestion des talents et entretiens"
+    volume: 8100
     scheduled_date: "2026-09-22"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
-  - kw: "people analytics"
-    category: "Guides et tendances RH"
-    volume: 260
+  - kw: "entretien annuel"
+    category: "Gestion des talents et entretiens"
+    volume: 4400
     scheduled_date: "2026-09-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "entretien individuel"
+    category: "Gestion des talents et entretiens"
+    volume: 1900
+    scheduled_date: "2026-09-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "people review"
+    category: "Gestion des talents et entretiens"
+    volume: 1000
+    scheduled_date: "2026-10-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des talents"
+    category: "Gestion des talents et entretiens"
+    volume: 90
+    scheduled_date: "2026-10-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de recrutement"
+    category: "Gestion des talents et entretiens"
+    volume: 880
+    scheduled_date: "2026-10-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion des entretiens"
+    category: "Gestion des talents et entretiens"
+    volume: 30
+    scheduled_date: "2026-10-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "compte rendu entretien professionnel"
+    category: "Gestion des talents et entretiens"
+    volume: 260
+    scheduled_date: "2026-10-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "plan de formation"
+    category: "Formation et competences"
+    volume: 2400
+    scheduled_date: "2026-10-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "plan de developpement des competences"
+    category: "Formation et competences"
+    volume: 1600
+    scheduled_date: "2026-10-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "referentiel de competences"
+    category: "Formation et competences"
+    volume: 1600
+    scheduled_date: "2026-10-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "cartographie des competences"
+    category: "Formation et competences"
+    volume: 1000
+    scheduled_date: "2026-10-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "gestion des competences"
+    category: "Formation et competences"
+    volume: 390
+    scheduled_date: "2026-11-03"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "matrice de competences"
+    category: "Formation et competences"
+    volume: 720
+    scheduled_date: "2026-11-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel de gestion de la formation"
+    category: "Formation et competences"
+    volume: 480
+    scheduled_date: "2026-11-10"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "logiciel gpec"
+    category: "Formation et competences"
+    volume: 320
+    scheduled_date: "2026-11-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "gepp"
+    category: "Formation et competences"
+    volume: 9900
+    scheduled_date: "2026-11-17"
     status: todo
     published_date: null
     published_url_fr: null
@@ -205,16 +340,25 @@ articles:
   - kw: "logiciel rh pour industrie"
     category: "SIRH par secteur"
     volume: 30
-    scheduled_date: "2026-09-29"
+    scheduled_date: "2026-11-20"
     status: todo
     published_date: null
     published_url_fr: null
     published_url_en: null
     error: null
-  - kw: "convention collective restauration rapide"
+  - kw: "logiciel rh btp"
     category: "SIRH par secteur"
-    volume: 2900
-    scheduled_date: "2026-10-02"
+    volume: 70
+    scheduled_date: "2026-11-24"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+  - kw: "classification metallurgie"
+    category: "SIRH par secteur"
+    volume: 880
+    scheduled_date: "2026-11-27"
     status: todo
     published_date: null
     published_url_fr: null
