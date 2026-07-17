@@ -17,10 +17,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 90
     scheduled_date: "2026-07-17"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-17"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/quel-sirh-choisir/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/which-hris-to-choose/"
     error: null
   - kw: "aide au choix sirh"
     category: "Guides et tendances RH"

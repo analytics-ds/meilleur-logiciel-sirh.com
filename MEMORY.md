@@ -2,6 +2,7 @@
 
 ## Semaine 29 (13/07/2026 - 19/07/2026)
 - 2026-07-13 | Logiciel SIRH : définition et guide (FR+EN) | Guides et tendances RH | auto
+- 2026-07-17 | Quel SIRH choisir : 6 critères clés (FR+EN) | Guides et tendances RH | auto
 
 ## Semaine 25 (15/06/2026 - 21/06/2026)
 - Batch conventions collectives par secteur (FR+EN+ES+IT, 4 langues, publishDate échelonnés 1/jour, cron quotidien ajouté au workflow). Mots-clés issus de la recherche Semrush Skello.
