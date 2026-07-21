@@ -26,10 +26,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 140
     scheduled_date: "2026-07-21"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-21"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/aide-au-choix-sirh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hris-selection-support/"
     error: null
   - kw: "prix logiciel sirh"
     category: "Guides et tendances RH"

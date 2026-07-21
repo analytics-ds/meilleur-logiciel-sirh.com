@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 30 (20/07/2026 - 26/07/2026)
+- 2026-07-21 | Aide au choix SIRH : 5 étapes clés (FR+EN) | Guides et tendances RH | auto
+
 ## Semaine 29 (13/07/2026 - 19/07/2026)
 - 2026-07-13 | Logiciel SIRH : définition et guide (FR+EN) | Guides et tendances RH | auto
 - 2026-07-17 | Quel SIRH choisir : 6 critères clés (FR+EN) | Guides et tendances RH | auto
