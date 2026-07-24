@@ -35,10 +35,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 70
     scheduled_date: "2026-07-24"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-24"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/prix-logiciel-sirh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hris-software-pricing/"
     error: null
   - kw: "logiciel sirh pme"
     category: "Guides et tendances RH"
