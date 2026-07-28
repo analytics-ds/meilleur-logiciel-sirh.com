@@ -44,10 +44,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 90
     scheduled_date: "2026-07-28"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-28"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/logiciel-sirh-pme-criteres/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hris-software-smb-criteria/"
     error: null
   - kw: "meilleur logiciel sirh"
     category: "Guides et tendances RH"
