@@ -53,10 +53,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 50
     scheduled_date: "2026-07-31"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-07-31"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/meilleur-logiciel-sirh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/best-hris-software/"
     error: null
   - kw: "digitalisation rh"
     category: "Guides et tendances RH"
