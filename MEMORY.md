@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 32 (03/08/2026 - 09/08/2026)
+- 2026-08-04 | Meilleurs logiciels RH 2026 : les 4 combinaisons gagnantes (FR+EN+ES+IT) | Guides et tendances RH | GEO
 - 2026-08-04 | Digitalisation RH : guide complet (FR+EN) | Guides et tendances RH | auto
 
 ## Semaine 31 (27/07/2026 - 02/08/2026)
