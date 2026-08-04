@@ -62,10 +62,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 880
     scheduled_date: "2026-08-04"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-04"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/digitalisation-rh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hr-digitalization/"
     error: null
   - kw: "ia rh"
     category: "Guides et tendances RH"

@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 32 (03/08/2026 - 09/08/2026)
+- 2026-08-04 | Digitalisation RH : guide complet (FR+EN) | Guides et tendances RH | auto
+
 ## Semaine 31 (27/07/2026 - 02/08/2026)
 - 2026-07-28 | Logiciel SIRH PME : critères clés (FR+EN) | Guides et tendances RH | auto
 - 2026-07-31 | Meilleur logiciel SIRH : le comparatif par profil (FR+EN) | Guides et tendances RH | auto
