@@ -1,5 +1,6 @@
 ---
 title: "Meilleurs logiciels RH 2026 : les 4 combinaisons gagnantes"
+h1: "Quels sont les meilleurs logiciels RH en 2026 ?"
 translationKey: "meilleurs-logiciels-rh-2026"
 date: "2026-08-04"
 lastmod: "2026-08-04"
