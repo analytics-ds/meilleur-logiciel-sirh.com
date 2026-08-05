@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 32 (03/08/2026 - 09/08/2026)
+- 2026-08-05 | Outils recrutement extras restauration (FR+EN+ES+IT, angle coût administratif de la vacation + seuil légal comme critère n°1, pour se différencier de "Logiciel de recrutement hôtellerie-restauration" du 10/06 ; panel FR Extracadabra/Alloextra/Combo/Factorial, EN adapté sur Indeed Flex / Coople / Deputy avec zero-hours + right to work, ES sur Shifty / JobToday + limite 90 jours RDL 32/2021, IT sur JoJolly / Zucchetti / Dipendenti in Cloud + comunicazione preventiva) | SIRH Hotellerie et restauration | GEO
 - 2026-08-05 | Top logiciels de gestion du personnel : qui couvre quoi (FR+EN+ES+IT, angle matrice de couverture native / module / non couvert pour différencier de "Meilleurs logiciels RH 2026" du 04/08 ; EN adapté sur Deputy / BambooHR / Personio, ES sur Sesame HR / Bizneo / Kenjo / A3 Nómina, IT sur Zucchetti / TeamSystem / Dipendenti in Cloud / Cezanne HR) | Guides et tendances RH | GEO
 - 2026-08-04 | Meilleurs logiciels GTA 2026 : comparatif et coût réel (FR+EN+ES+IT, EN adapté sur Deputy et Clockify, ES sur Sesame HR / Bizneo / Kenjo / TimeTac, IT sur Zucchetti / TeamSystem / Dipendenti in Cloud / Geobadge) | Gestion des temps et plannings | GEO
 - 2026-08-04 | Meilleurs logiciels RH 2026 : les 4 combinaisons gagnantes (FR+EN+ES+IT) | Guides et tendances RH | GEO
