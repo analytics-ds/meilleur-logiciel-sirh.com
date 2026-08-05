@@ -35,7 +35,11 @@ titleCaseStyle = "none"
     locale = "fr-FR"
     label = "Français"
     weight = 1
-    contentDir = "content"
+    # contentDir doit etre un dossier FRERE de content/en, content/es et content/it.
+    # Avec contentDir = "content", Hugo indexait deux fois chaque page etrangere
+    # (une fois comme contenu fr, une fois dans sa vraie langue), ce qui polluait
+    # le hreflang et injectait 85 URLs /en /es /it dans le sitemap fr.
+    contentDir = "content/fr"
     title = "Meilleur Logiciel SIRH"
     [languages.fr.params]
       description = "Comparatif indépendant des logiciels SIRH du marché : paie, GTA, talents, formation. Guides, retours d'expérience et tendances RH."
