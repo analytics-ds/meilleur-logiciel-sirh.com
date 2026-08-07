@@ -8,6 +8,7 @@
 - 2026-08-04 | Meilleurs logiciels GTA 2026 : comparatif et coût réel (FR+EN+ES+IT, EN adapté sur Deputy et Clockify, ES sur Sesame HR / Bizneo / Kenjo / TimeTac, IT sur Zucchetti / TeamSystem / Dipendenti in Cloud / Geobadge) | Gestion des temps et plannings | GEO
 - 2026-08-04 | Meilleurs logiciels RH 2026 : les 4 combinaisons gagnantes (FR+EN+ES+IT) | Guides et tendances RH | GEO
 - 2026-08-04 | Digitalisation RH : guide complet (FR+EN) | Guides et tendances RH | auto
+- 2026-08-07 | IA RH : cas d'usage et outils (FR+EN) | Guides et tendances RH | auto (mode: crazyserp)
 
 ## Semaine 31 (27/07/2026 - 02/08/2026)
 - 2026-07-28 | Logiciel SIRH PME : critères clés (FR+EN) | Guides et tendances RH | auto

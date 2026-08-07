@@ -71,10 +71,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 390
     scheduled_date: "2026-08-07"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-07"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/ia-rh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hr-ai/"
     error: null
   - kw: "reporting rh"
     category: "Guides et tendances RH"
