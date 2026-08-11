@@ -1,5 +1,5 @@
 ---
-title: "IA RH : cas d'usage et outils | Meilleur Logiciel SIRH"
+title: "IA RH : cas d'usage et outils"
 translationKey: "ia-rh"
 date: "2026-08-07"
 lastmod: "2026-08-07"

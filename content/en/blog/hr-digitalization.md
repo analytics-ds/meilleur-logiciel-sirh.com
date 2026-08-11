@@ -1,5 +1,5 @@
 ---
-title: "HR Digitalization: Complete Guide | Best HRIS Software"
+title: "HR Digitalization: Complete Guide"
 translationKey: "digitalisation-rh"
 date: "2026-08-04"
 lastmod: "2026-08-04"

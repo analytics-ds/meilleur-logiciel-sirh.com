@@ -1,5 +1,5 @@
 ---
-title: "Which HRIS to Choose: 6 Key Criteria | Best HRIS Software"
+title: "Which HRIS to Choose: 6 Key Criteria"
 translationKey: "quel-sirh-choisir"
 date: "2026-07-17"
 lastmod: "2026-07-17"

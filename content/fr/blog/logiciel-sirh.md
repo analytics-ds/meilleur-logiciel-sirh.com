@@ -1,5 +1,5 @@
 ---
-title: "Logiciel SIRH : définition et guide | Meilleur Logiciel SIRH"
+title: "Logiciel SIRH : définition et guide"
 translationKey: "logiciel-sirh"
 date: "2026-07-13"
 lastmod: "2026-07-13"

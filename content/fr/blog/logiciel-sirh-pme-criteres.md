@@ -1,5 +1,5 @@
 ---
-title: "Logiciel SIRH PME : critères clés | Meilleur Logiciel SIRH"
+title: "Logiciel SIRH PME : critères clés"
 translationKey: "logiciel-sirh-pme-criteres"
 date: "2026-07-28"
 lastmod: "2026-07-28"

@@ -1,5 +1,5 @@
 ---
-title: "Prix logiciel SIRH : quel budget | Meilleur Logiciel SIRH"
+title: "Prix logiciel SIRH : quel budget"
 translationKey: "prix-logiciel-sirh"
 date: "2026-07-24"
 lastmod: "2026-07-24"

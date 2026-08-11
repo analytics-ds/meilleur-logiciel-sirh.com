@@ -1,5 +1,5 @@
 ---
-title: "HRIS Selection Support: 5 Key Steps | Best HRIS Software"
+title: "HRIS Selection Support: 5 Key Steps"
 translationKey: "aide-au-choix-sirh"
 date: "2026-07-21"
 lastmod: "2026-07-21"

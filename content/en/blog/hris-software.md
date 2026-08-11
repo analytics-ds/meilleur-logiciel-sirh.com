@@ -1,5 +1,5 @@
 ---
-title: "HRIS Software: Definition and Guide | Best HRIS Software"
+title: "HRIS Software: Definition and Guide"
 translationKey: "logiciel-sirh"
 date: "2026-07-13"
 lastmod: "2026-07-13"

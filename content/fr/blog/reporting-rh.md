@@ -1,5 +1,5 @@
 ---
-title: "Reporting RH : indicateurs clés | Meilleur Logiciel SIRH"
+title: "Reporting RH : indicateurs clés"
 translationKey: "reporting-rh"
 date: "2026-08-11"
 lastmod: "2026-08-11"

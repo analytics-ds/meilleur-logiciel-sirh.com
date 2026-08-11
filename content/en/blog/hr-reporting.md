@@ -1,5 +1,5 @@
 ---
-title: "HR Reporting: Key Indicators | Best HRIS Software"
+title: "HR Reporting: Key Indicators"
 translationKey: "reporting-rh"
 date: "2026-08-11"
 lastmod: "2026-08-11"

@@ -1,5 +1,5 @@
 ---
-title: "HR AI: Use Cases and Tools | Best HRIS Software"
+title: "HR AI: Use Cases and Tools"
 translationKey: "ia-rh"
 date: "2026-08-07"
 lastmod: "2026-08-07"

@@ -1,5 +1,5 @@
 ---
-title: "Aide au choix SIRH : 5 étapes clés | Meilleur Logiciel SIRH"
+title: "Aide au choix SIRH : 5 étapes clés"
 translationKey: "aide-au-choix-sirh"
 date: "2026-07-21"
 lastmod: "2026-07-21"

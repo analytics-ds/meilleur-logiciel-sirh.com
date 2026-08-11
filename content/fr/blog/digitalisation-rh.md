@@ -1,5 +1,5 @@
 ---
-title: "Digitalisation RH : guide complet | Meilleur Logiciel SIRH"
+title: "Digitalisation RH : guide complet"
 translationKey: "digitalisation-rh"
 date: "2026-08-04"
 lastmod: "2026-08-04"

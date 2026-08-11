@@ -1,5 +1,5 @@
 ---
-title: "HRIS Software Pricing: What Budget | Best HRIS Software"
+title: "HRIS Software Pricing: What Budget"
 translationKey: "prix-logiciel-sirh"
 date: "2026-07-24"
 lastmod: "2026-07-24"

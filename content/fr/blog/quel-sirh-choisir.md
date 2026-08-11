@@ -1,5 +1,5 @@
 ---
-title: "Quel SIRH choisir : 6 critères clés | Meilleur Logiciel SIRH"
+title: "Quel SIRH choisir : 6 critères clés"
 translationKey: "quel-sirh-choisir"
 date: "2026-07-17"
 lastmod: "2026-07-17"

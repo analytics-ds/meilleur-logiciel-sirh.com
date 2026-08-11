@@ -145,11 +145,23 @@ L'agent determine :
 Pas d'appel aux skills `/tech-title` ni `/tech-meta-description`. Regles appliquees directement :
 
 ### Title
-- Contient le `kw` en premier tiers de la balise si possible
-- Max 60 caracteres (proxy safe pour 580px en Arial SERP Google)
-- Format cible : `[Kw] : [angle] | [Nom du site]`
-- Le nom du site vient du `hugo.toml` (`title` global)
+
+**NE JAMAIS ecrire le nom du site dans le `title` du frontmatter.** Le theme l'ajoute deja tout seul : `themes/sirh/layouts/_default/baseof.html` rend `{{ .Title }} | {{ .Site.Title }}`. Mettre le suffixe dans le frontmatter le fait sortir **deux fois** dans la balise, et comme `single.html` construit le H1 avec `{{ .Title }}` a defaut de `.Params.h1`, le nom du site se retrouve aussi **dans le H1**. Defaut constate le 2026-08-11 sur 16 articles (8 FR + 8 EN), corrige le meme jour.
+
+- Format du frontmatter : `[Kw] : [angle]`, **sans nom de site, sans separateur final**
+- Contient le `kw` en debut de title
+- **Le budget de 60 caracteres porte sur le title RENDU**, donc frontmatter + suffixe ajoute par le theme. Longueur maximale du frontmatter par langue :
+
+| Langue | `Site.Title` | Suffixe ajoute | Max pour le frontmatter |
+|---|---|---|---|
+| fr | Meilleur Logiciel SIRH | ` \| Meilleur Logiciel SIRH` (25) | **35** |
+| en | Best HRIS Software | ` \| Best HRIS Software` (21) | **39** |
+| es | Mejor Software RRHH | ` \| Mejor Software RRHH` (22) | **38** |
+| it | Miglior Software HR | ` \| Miglior Software HR` (22) | **38** |
+
+- Controle avant de continuer : `python3 -c "print(len('<title frontmatter>') + <longueur du suffixe>)"` doit donner 60 au maximum. Si ca depasse, raccourcir l'angle, jamais le `kw`.
 - **Une seule option, choix direct** (pas de 3 options comme en interactif)
+- Meme regle pour la traduction EN et pour toute autre langue produite.
 
 ### Meta description
 - Max 155 caracteres (proxy safe pour 920px en Arial SERP)

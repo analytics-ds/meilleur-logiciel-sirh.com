@@ -1,5 +1,5 @@
 ---
-title: "HRIS Software for SMBs: Key Criteria | Best HRIS Software"
+title: "HRIS Software for SMBs: Key Criteria"
 translationKey: "logiciel-sirh-pme-criteres"
 date: "2026-07-28"
 lastmod: "2026-07-28"
