@@ -80,10 +80,10 @@ articles:
     category: "Guides et tendances RH"
     volume: 390
     scheduled_date: "2026-08-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-11"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/reporting-rh/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/hr-reporting/"
     error: null
   - kw: "logiciel gestion planning"
     category: "Gestion des temps et plannings"
