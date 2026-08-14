@@ -2,6 +2,7 @@
 
 ## Semaine 33 (10/08/2026 - 16/08/2026)
 - 2026-08-11 | Reporting RH : indicateurs clés (FR+EN) | Guides et tendances RH | auto (mode: websearch, CrazySERP timeout 240s)
+- 2026-08-14 | Logiciel gestion planning : guide (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp)
 
 ## Semaine 32 (03/08/2026 - 09/08/2026)
 - 2026-08-05 | Meilleurs logiciels de planning : le comparatif par horaires (FR+EN+ES+IT, angle "classement par la forme des horaires à produire" en 5 profils (fixes répétitifs / variables reconstruits chaque semaine / cycles postés et rotations longues / multi-établissements avec personnel partagé / interventions en mobilité), l'idée directrice étant que l'hypothèse de départ du moteur de planning compte plus que la taille de l'entreprise ; se différencie de "Meilleurs logiciels GTA" du 04/08 qui classe par mode de collecte des heures, de "Top logiciels de gestion du personnel" du 05/08 qui classe par couverture native/module, et de la rédaction Skello du même prompt qui traite la facturation établissement vs collaborateur ; panel FR Skello/Combo/Octime/Kelio/Agendrix, EN adapté sur Deputy 5 $/user + When I Work 2,50 $/user single-location + Planday + EU Working Time Directive, ES sur Sesame HR échelle 4,75 à 8,00 €/empleado + aTurnos pour les rotations + Kenjo + Woffu + registro horario RDL 8/2019, IT sur Dipendenti in Cloud sans module de sélection + Zucchetti ZScheduling + TeamSystem + Bitrix24 plan gratuit + D.Lgs. 66/2003 ; Fluida volontairement exclu du panel IT car partenaire Skello) | Gestion des temps et plannings | GEO

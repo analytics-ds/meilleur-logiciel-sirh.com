@@ -89,10 +89,10 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 480
     scheduled_date: "2026-08-14"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-14"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/logiciel-gestion-planning/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/employee-scheduling-software/"
     error: null
   - kw: "logiciel gestion conges"
     category: "Gestion des temps et plannings"
