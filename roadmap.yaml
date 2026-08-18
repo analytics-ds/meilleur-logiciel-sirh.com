@@ -98,10 +98,10 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 480
     scheduled_date: "2026-08-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-18"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/logiciel-gestion-conges/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/leave-management-software/"
     error: null
   - kw: "logiciel de gestion des absences"
     category: "Gestion des temps et plannings"

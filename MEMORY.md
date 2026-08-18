@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 34 (17/08/2026 - 23/08/2026)
+- 2026-08-18 | Logiciel gestion congés : guide (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp)
+
 ## Semaine 33 (10/08/2026 - 16/08/2026)
 - 2026-08-11 | Reporting RH : indicateurs clés (FR+EN) | Guides et tendances RH | auto (mode: websearch, CrazySERP timeout 240s)
 - 2026-08-14 | Logiciel gestion planning : guide (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp)
