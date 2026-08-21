@@ -2,6 +2,7 @@
 
 ## Semaine 34 (17/08/2026 - 23/08/2026)
 - 2026-08-18 | Logiciel gestion congés : guide (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp)
+- 2026-08-21 | Logiciel de gestion des absences (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp, sans image hero : fetch-image.sh en echec x2)
 
 ## Semaine 33 (10/08/2026 - 16/08/2026)
 - 2026-08-11 | Reporting RH : indicateurs clés (FR+EN) | Guides et tendances RH | auto (mode: websearch, CrazySERP timeout 240s)

@@ -107,10 +107,10 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 140
     scheduled_date: "2026-08-21"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-21"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/logiciel-gestion-absences/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/absence-management-software/"
     error: null
   - kw: "pointeuse mobile"
     category: "Gestion des temps et plannings"
