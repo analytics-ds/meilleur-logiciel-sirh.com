@@ -116,10 +116,10 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 320
     scheduled_date: "2026-08-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-08-25"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/pointeuse-mobile/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/mobile-time-clock-app/"
     error: null
   - kw: "gestion de personnel logiciel"
     category: "Gestion des temps et plannings"
