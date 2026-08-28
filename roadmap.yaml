@@ -125,11 +125,11 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 320
     scheduled_date: "2026-08-28"
-    status: todo
+    status: failed
     published_date: null
     published_url_fr: null
     published_url_en: null
-    error: null
+    error: "cannibalisation: kw quasi-identique a l'article deja publie content/fr/blog/top-logiciels-gestion-du-personnel.md (titre 'Top logiciels de gestion du personnel : qui couvre quoi', publie 2026-08-05, categorie Guides et tendances RH). Overlap de tokens gestion/personnel/logiciel >= 50% avec le garde-fou cannibalisation du CLAUDE.md. Publication bloquee, arbitrage humain requis (differencier l'angle, changer le kw, ou confirmer la publication malgre le doublon)."
   - kw: "dpae"
     category: "Paie et administration RH"
     volume: 135000
