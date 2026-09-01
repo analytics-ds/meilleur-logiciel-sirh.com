@@ -134,10 +134,10 @@ articles:
     category: "Paie et administration RH"
     volume: 135000
     scheduled_date: "2026-09-01"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-01"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/dpae/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/prior-hiring-declaration-france/"
     error: null
   - kw: "transparence des salaires"
     category: "Paie et administration RH"
