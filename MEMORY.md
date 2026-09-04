@@ -2,6 +2,7 @@
 
 ## Semaine 36 (31/08/2026 - 06/09/2026)
 - 2026-09-01 | DPAE : définition et démarche (FR+EN) | Paie et administration RH | auto (mode: crazyserp)
+- 2026-09-04 | Transparence des salaires : en 2026 (FR+EN) | Paie et administration RH | auto (mode: datafer, score: 73/57)
 
 ## Semaine 35 (24/08/2026 - 30/08/2026)
 - 2026-08-25 | Pointeuse mobile : guide complet (FR+EN) | Gestion des temps et plannings | auto (mode: crazyserp)

@@ -143,10 +143,10 @@ articles:
     category: "Paie et administration RH"
     volume: 28800
     scheduled_date: "2026-09-04"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-04"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/transparence-des-salaires/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/pay-transparency/"
     error: null
   - kw: "grille salaire"
     category: "Paie et administration RH"
