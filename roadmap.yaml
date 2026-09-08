@@ -152,10 +152,10 @@ articles:
     category: "Paie et administration RH"
     volume: 1600
     scheduled_date: "2026-09-08"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-08"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/grille-salaire/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/pay-scale/"
     error: null
   - kw: "plan de remuneration"
     category: "Paie et administration RH"

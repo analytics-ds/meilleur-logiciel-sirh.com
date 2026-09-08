@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 37 (07/09/2026 - 13/09/2026)
+- 2026-09-08 | Grille de salaire : comment la lire (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 77/59 | image: pexels | AIO: Declenchee
+
 ## Semaine 36 (31/08/2026 - 06/09/2026)
 - 2026-09-01 | DPAE : définition et démarche (FR+EN) | Paie et administration RH | auto (mode: crazyserp)
 - 2026-09-04 | Transparence des salaires : en 2026 (FR+EN) | Paie et administration RH | auto (mode: datafer, score: 73/57)
