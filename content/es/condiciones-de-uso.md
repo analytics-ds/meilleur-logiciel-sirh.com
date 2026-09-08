@@ -3,6 +3,7 @@ title: "Condiciones de uso"
 description: "Condiciones de uso de Meilleur Logiciel SIRH: acceso al sitio, alcance de los contenidos, responsabilidad y propiedad intelectual."
 slug: "condiciones-de-uso"
 translationKey: "terms-of-service"
+noindex: true
 date: 2026-09-08
 lastmod: 2026-09-08
 ---

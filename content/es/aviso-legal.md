@@ -3,6 +3,7 @@ title: "Aviso legal"
 description: "Aviso legal de Meilleur Logiciel SIRH: editor, responsable editorial, alojamiento, propiedad intelectual y legislación aplicable."
 slug: "aviso-legal"
 translationKey: "legal-notice"
+noindex: true
 date: 2026-09-08
 lastmod: 2026-09-08
 ---

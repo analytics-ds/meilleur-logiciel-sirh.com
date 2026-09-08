@@ -3,6 +3,7 @@ title: "Informativa sulla privacy"
 description: "Informativa sulla privacy di Meilleur Logiciel SIRH: dati raccolti, finalità, tempi di conservazione, cookie e diritti GDPR."
 slug: "informativa-sulla-privacy"
 translationKey: "privacy-policy"
+noindex: true
 date: 2026-09-08
 lastmod: 2026-09-08
 ---

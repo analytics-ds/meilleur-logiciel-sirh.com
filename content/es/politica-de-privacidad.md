@@ -3,6 +3,7 @@ title: "Política de privacidad"
 description: "Política de privacidad de Meilleur Logiciel SIRH: datos recogidos, finalidades, plazos de conservación, cookies y derechos RGPD."
 slug: "politica-de-privacidad"
 translationKey: "privacy-policy"
+noindex: true
 date: 2026-09-08
 lastmod: 2026-09-08
 ---

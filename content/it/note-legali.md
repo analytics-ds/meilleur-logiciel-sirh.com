@@ -3,6 +3,7 @@ title: "Note legali"
 description: "Note legali di Meilleur Logiciel SIRH: editore, responsabile editoriale, hosting, proprietà intellettuale e legge applicabile."
 slug: "note-legali"
 translationKey: "legal-notice"
+noindex: true
 date: 2026-09-08
 lastmod: 2026-09-08
 ---
