@@ -74,4 +74,17 @@
             <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ index $rights $lang }}</p>
         </div>
     </div>
+<!-- pbn-legal:start -->
+<div class="footer-legal">
+    <ul>
+        {{- $lg := .Site.Language.Lang }}
+        {{- $map := dict "fr" (slice (slice "mentions-legales/" "Mentions légales") (slice "politique-de-confidentialite/" "Politique de confidentialité") (slice "cgu/" "CGU")) "en" (slice (slice "legal-notice/" "Legal notice") (slice "privacy-policy/" "Privacy policy") (slice "terms-of-service/" "Terms of use")) "es" (slice (slice "aviso-legal/" "Aviso legal") (slice "politica-de-privacidad/" "Política de privacidad") (slice "condiciones-de-uso/" "Condiciones de uso")) "it" (slice (slice "note-legali/" "Note legali") (slice "informativa-sulla-privacy/" "Privacy") (slice "condizioni-di-utilizzo/" "Condizioni di utilizzo")) }}
+        {{- $items := index $map $lg }}
+        {{- if not $items }}{{ $items = index $map "fr" }}{{ end }}
+        {{- range $items }}
+        <li><a href="{{ (index . 0) | relLangURL }}">{{ index . 1 }}</a></li>
+        {{- end }}
+    </ul>
+</div>
+<!-- pbn-legal:end -->
 </footer>
