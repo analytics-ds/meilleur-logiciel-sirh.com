@@ -2,6 +2,7 @@
 
 ## Semaine 37 (07/09/2026 - 13/09/2026)
 - 2026-09-08 | Grille de salaire : comment la lire (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 77/59 | image: pexels | AIO: Declenchee
+- 2026-09-11 | Plan de rémunération : guide (FR+EN) | Paie et administration RH | auto | mode: websearch (DATAFER 401 cle invalide, CRAZYSERP 401 invalid authorization format) | score: non mesure | image: pexels | AIO: non verifiee
 
 ## Semaine 36 (31/08/2026 - 06/09/2026)
 - 2026-09-01 | DPAE : définition et démarche (FR+EN) | Paie et administration RH | auto (mode: crazyserp)

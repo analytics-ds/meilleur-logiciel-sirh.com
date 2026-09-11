@@ -161,10 +161,10 @@ articles:
     category: "Paie et administration RH"
     volume: 330
     scheduled_date: "2026-09-11"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-11"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/plan-remuneration/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/compensation-plan/"
     error: null
   - kw: "revalorisation salariale"
     category: "Paie et administration RH"
