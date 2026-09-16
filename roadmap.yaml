@@ -125,7 +125,7 @@ articles:
     category: "Gestion des temps et plannings"
     volume: 320
     scheduled_date: "2026-08-28"
-    status: failed
+    status: queued
     published_date: null
     published_url_fr: null
     published_url_en: null
