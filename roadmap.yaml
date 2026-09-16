@@ -1,6 +1,6 @@
 # Roadmap editoriale evergreen — skill /create-article-auto
-# Blog PBN GEO datashake : meilleur-logiciel-sirh.com (comparatif SIRH, mutualise Skello + Empowill)
-# 40 mots-cles issus des roadmaps SEO Skello + Empowill, adaptes a un blog comparatif SIRH.
+# Roadmap editoriale du site (comparatif de logiciels SIRH)
+# 40 mots-cles adaptes a un blog comparatif SIRH.
 # Champs humains : kw, category, scheduled_date, status. Le reste est rempli par l'agent.
 
 articles:
