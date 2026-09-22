@@ -1,5 +1,8 @@
 # Journal de publication
 
+## Semaine 39 (21/09/2026 - 27/09/2026)
+- 2026-09-22 | Revalorisation salariale : guide RH (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 77/62 | image: pexels | AIO: non declenchee
+
 ## Semaine 37 (07/09/2026 - 13/09/2026)
 - 2026-09-08 | Grille de salaire : comment la lire (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 77/59 | image: pexels | AIO: Declenchee
 - 2026-09-11 | Plan de rémunération : guide (FR+EN) | Paie et administration RH | auto | mode: websearch (DATAFER 401 cle invalide, CRAZYSERP 401 invalid authorization format) | score: non mesure | image: pexels | AIO: non verifiee

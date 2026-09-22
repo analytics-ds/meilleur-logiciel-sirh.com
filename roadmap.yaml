@@ -170,10 +170,10 @@ articles:
     category: "Paie et administration RH"
     volume: 390
     scheduled_date: "2026-09-15"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-22"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/revalorisation-salariale/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/salary-revaluation/"
     error: null
   - kw: "duerp"
     category: "Paie et administration RH"
