@@ -179,10 +179,10 @@ articles:
     category: "Paie et administration RH"
     volume: 27100
     scheduled_date: "2026-09-18"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-25"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/duerp/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/duerp-workplace-risk-assessment/"
     error: null
   - kw: "entretien professionnel"
     category: "Gestion des talents et entretiens"

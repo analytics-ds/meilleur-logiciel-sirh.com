@@ -1,6 +1,7 @@
 # Journal de publication
 
 ## Semaine 39 (21/09/2026 - 27/09/2026)
+- 2026-09-25 | DUERP : guide et obligations RH (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 76/64 | image: pexels | AIO: non declenchee
 - 2026-09-22 | Revalorisation salariale : guide RH (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 77/62 | image: pexels | AIO: non declenchee
 
 ## Semaine 37 (07/09/2026 - 13/09/2026)
