@@ -197,10 +197,10 @@ articles:
     category: "Gestion des talents et entretiens"
     volume: 4400
     scheduled_date: "2026-09-25"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-10-02"
+    published_url_fr: "https://meilleur-logiciel-sirh.com/blog/entretien-annuel/"
+    published_url_en: "https://meilleur-logiciel-sirh.com/en/blog/annual-review/"
     error: null
   - kw: "entretien individuel"
     category: "Gestion des talents et entretiens"

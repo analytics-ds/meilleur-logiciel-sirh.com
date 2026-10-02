@@ -2,6 +2,7 @@
 
 ## Semaine 40 (28/09/2026 - 04/10/2026)
 - 2026-09-29 | Entretien professionnel : guide RH (FR+EN) | Gestion des talents et entretiens | auto | mode: datafer | score: 70/62 | image: pexels | AIO: non declenchee
+- 2026-10-02 | Entretien annuel : guide complet (FR+EN) | Gestion des talents et entretiens | auto | mode: datafer | score: 78/65 | image: pexels | AIO: Declenchee
 
 ## Semaine 39 (21/09/2026 - 27/09/2026)
 - 2026-09-25 | DUERP : guide et obligations RH (FR+EN) | Paie et administration RH | auto | mode: datafer | score: 76/64 | image: pexels | AIO: non declenchee
